@@ -158,3 +158,64 @@ body {
   );
   border-image-slice: 1;
 }
+.parrent-border-top {
+  background: linear-gradient(180deg, #4bb0ff 0%, #ffffff 100%);
+  padding: 1px;
+  border-radius: 16px;
+}
+.parrent-border-bottom {
+  background: linear-gradient(180deg, #ffffff 0%, #4bb0ff 100%);
+  padding: 1px;
+  border-radius: 16px;
+}
+
+.inner-content {
+  background: white;
+  border-radius: 15px; /* nhỏ hơn hoặc bằng lớp ngoài để khớp */
+  /* padding: 16px; */
+}
+.bg-footer {
+  background: linear-gradient(
+    142deg,
+    #e9ffff 29.61%,
+    #f2fffb 41.09%,
+    #fff 72.93%
+  );
+}
+.bg-banner {
+  background: linear-gradient(
+    142deg,
+    #fff 30.16%,
+    #dafff4 65.05%,
+    #d6ffff 73.48%
+  );
+}
+.bg-core {
+  background: linear-gradient(
+    257deg,
+    #f7fffd 53.86%,
+    #e3fff7 75.84%,
+    #e9ffff 92%
+  );
+}
+.bg-infra {
+  background: linear-gradient(
+    257deg,
+    #d6ffff 7.91%,
+    #dafff4 24.07%,
+    #f7fffd 56.83%
+  );
+}
+.bg-mission {
+  background: linear-gradient(
+    257deg,
+    #e5ffff 7.91%,
+    #dafff4 24.07%,
+    #f7fffd 46.05%
+  );
+}
+ul.custom-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  list-style: disc !important;
+}

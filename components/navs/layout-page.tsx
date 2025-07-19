@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import HeaderSection from "./header-section";
+import { FollowerPointerCard } from "../ui/following-pointer";
 
 interface LayoutProps {
   children: React.ReactNode;

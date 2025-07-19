@@ -10,14 +10,14 @@ export default function MissionSection() {
       }}
     >
       <div className="container mx-auto relative flex px-[100px] max-2xl:px-4 max-xl:px-2">
-        <div className="border-l border-gradient pl-5 max-w-[548px] flex flex-col gap-4 text-[#1E1E1E]">
+        <div className="border-l border-gradient pl-5 max-w-[548px] flex flex-col gap-4 text-[#1E1E1E] max-lg:gap-3">
           <div className="flex">
-            <h1 className="h-[60px] font-display font-bold text-[36px] leading-[44px] tracking-[-0.02em] bg-gradient-to-r from-[#181818] via-[#7E7E7E] to-[#7E7E7E] text-transparent bg-clip-text">
+            <h1 className="h-[60px] font-display font-bold text-[36px] leading-[44px] tracking-[-0.02em] bg-gradient-to-r from-[#181818] via-[#7E7E7E] to-[#7E7E7E] text-transparent bg-clip-text  max-lg:text-2xl">
               Sứ mệnh
             </h1>
           </div>
 
-          <div>
+          <div className="max-lg:text-base">
             PILA cam kết xây dựng các giải pháp định danh số phi tập trung (DID)
             như một nền tảng cốt lõi để giải quyết các thách thức của thế giới
             số; từ bảo mật, minh bạch đến an toàn thông tin.

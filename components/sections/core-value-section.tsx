@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Icons } from "../icons";
 import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "motion/react";
 
 const listCore = [
   {
@@ -49,41 +50,61 @@ const listCore = [
 
 export default function CoreValueSection() {
   const [selected, setSelected] = useState(listCore[0]);
+  const [active, setActive] = useState(0);
+
+  const isActive = (index: number) => {
+    return index === active;
+  };
+
+  const randomRotateY = () => {
+    return Math.floor(Math.random() * 21) - 10;
+  };
+
   return (
     <section className="overflow-hidden bg-white">
       <div className="container mx-auto py-16 px-[100px] max-2xl:px-4 max-xl:px-2">
         <div className="flex flex-col gap-[52px]">
-          <span className="text-center text-[#181818] font-bold text-[36px] leading-11 tracking-[-0.72px]">
+          <span className="text-center text-[#181818] font-bold text-[36px] leading-11 tracking-[-0.72px] max-lg:text-2xl">
             Giá trị cốt lõi
           </span>
-          <div className="flex gap-[110px]">
+          <div className="flex gap-[110px] max-2xl:gap-[80px] max-xl:gap-[60px] max-lg:gap-[20px]">
             <div className="flex flex-col gap-2">
               {listCore.map((item, index) => (
                 <div
                   className={cn(
-                    "h-[156px] py-6 px-4 flex gap-8 items-center ",
+                    "py-6 px-4 flex gap-8 items-center ",
                     selected.id === item.id && "border-l border-[#00B6FF]",
-                    selected.id === item.id &&
-                      "bg-[linear-gradient(257deg,_#F7FFFD_53.86%,_#E3FFF7_75.84%,_#E9FFFF_92%)]"
+                    selected.id === item.id && "bg-core"
                   )}
                   key={index}
                   onClick={() => setSelected(item)}
                 >
                   <div>{item.icon}</div>
-                  <div className="flex flex-col gap-4">
-                    <span className="text-[#181818] font-semibold text-2xl leading-8">
+                  <div className="flex flex-col gap-4 max-lg:gap-2">
+                    <span className="text-[#181818] font-semibold text-2xl leading-8 max-lg:text-sm max-lg:leading-5">
                       {item.title}
                     </span>
-                    <span className="text-[#181818] text-sm leading-5">
+                    <span className="text-[#181818] text-sm leading-5 max-lg:text-xs line-clamp-3">
                       {item.description}
                     </span>
                   </div>
                 </div>
               ))}
             </div>
-            <div className="">
-              <img src={selected.img} alt="" />
-            </div>
+            <AnimatePresence>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 1.05 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="relative h-fit"
+              >
+                <img src={selected.img} alt="" />
+                <div className="absolute top-[45%] left-0 transform -translate-x-1/2 -translate-y-1/2">
+                  <Icons.coreArrowIcon className="max-2xl:w-[100px] max-lg:w-[60px]" />
+                </div>
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </div>

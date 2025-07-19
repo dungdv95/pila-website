@@ -6,25 +6,25 @@ import { Icons } from "../icons";
 const listVision = [
   {
     id: 1,
-    icon: <Icons.visonPeopleIcon />,
+    icon: <Icons.visonPeopleIcon className="max-lg:w-[100px] max-lg:h-fit" />,
     text: "Con người",
     description: "People",
   },
   {
     id: 2,
-    icon: <Icons.visonItemIcon />,
+    icon: <Icons.visonItemIcon className="max-lg:w-[100px] max-lg:h-fit" />,
     text: "Vật thể",
     description: "Items",
   },
   {
     id: 3,
-    icon: <Icons.visonLocationIcon />,
+    icon: <Icons.visonLocationIcon className="max-lg:w-[100px] max-lg:h-fit" />,
     text: "Vị trí",
     description: "Locations",
   },
   {
     id: 4,
-    icon: <Icons.visonActivityIcon />,
+    icon: <Icons.visonActivityIcon className="max-lg:w-[100px] max-lg:h-fit" />,
     text: "Hành động",
     description: "Activities",
   },
@@ -37,7 +37,7 @@ export default function VisionSection() {
         <div className="flex flex-col gap-[25px]">
           <div className="max-w-4xl flex flex-col gap-4">
             <span
-              className="font-bold text-[36px] leading-11 tracking-[-0.02em]"
+              className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl"
               style={{
                 background:
                   "linear-gradient(90deg, #181818 0%, #7E7E7E 30.97%)",
@@ -47,7 +47,7 @@ export default function VisionSection() {
             >
               Tầm nhìn
             </span>
-            <div className="text-[#1E1E1E] text-lg leading-7">
+            <div className="text-[#1E1E1E] text-lg leading-7 max-lg:text-base">
               PILA hướng tới trở thành nền tảng hạ tầng tin cậy cho kỷ nguyên
               số, xoay quanh 4 trụ cột dữ liệu đang dịch chuyển từ thế giới thực
               sang thế giới số:{" "}
@@ -63,25 +63,25 @@ export default function VisionSection() {
               <div
                 key={index}
                 className={cn(
-                  "py-6 flex flex-col gap-[31px] items-center border-0",
+                  "py-6 flex flex-col gap-[31px] items-center border-0 max-lg:gap-3",
                   "border-r border-gradient",
                   index === 0 && "border-x border-gradient",
                   index === listVision.length - 1 && "border-0"
                 )}
               >
                 <div className="">{item.icon}</div>
-                <div className="flex flex-col gap-[5px] text-[#1E1E1E]">
-                  <span className="font-medium text-2xl leading-8">
+                <div className="flex flex-col gap-[5px] text-[#1E1E1E] items-center justify-center">
+                  <span className="font-medium text-2xl leading-8 max-lg:text-lg ">
                     {item.text}
                   </span>
-                  <span className="text-center text-sm leading-5">
+                  <span className="text-sm leading-5">
                     ({item.description})
                   </span>
                 </div>
               </div>
             ))}
           </div>
-          <span className="mt-[11px] max-w-4xl text-[#717680] text-lg leading-7">
+          <span className="mt-[11px] max-w-4xl text-[#717680] text-lg leading-7 max-lg:text-sm">
             Ứng dụng công nghệ để kiến tạo một nền kinh tế số an toàn, minh bạch
             và bền vững, đồng hành cùng hành trình chuyển đổi số quốc gia trong
             kỷ nguyên vươn mình của đất nước.
