@@ -1,9 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Icons } from "../icons";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "motion/react";
+import { useIsMobile } from "../hooks/use-mobile";
+import {
+  Carousel,
+  CarouselApi,
+  CarouselContent,
+  CarouselItem,
+} from "../ui/carousel";
+import { Button } from "../ui/button";
 
 const listCore = [
   {
@@ -49,35 +57,50 @@ const listCore = [
 ];
 
 export default function CoreValueSection() {
-  const [selected, setSelected] = useState(listCore[0]);
-  const [active, setActive] = useState(0);
+  const [selected, setSelected] = useState(0);
 
-  const isActive = (index: number) => {
-    return index === active;
-  };
-
-  const randomRotateY = () => {
-    return Math.floor(Math.random() * 21) - 10;
-  };
+  const isMobile = useIsMobile();
+  if (isMobile) {
+    return <MobileCoreValue />;
+  }
 
   return (
-    <section className="overflow-hidden bg-white">
+    <section id="product" className="bg-white">
       <div className="container mx-auto py-16 px-[100px] max-2xl:px-4 max-xl:px-2">
         <div className="flex flex-col gap-[52px]">
-          <span className="text-center text-[#181818] font-bold text-[36px] leading-11 tracking-[-0.72px] max-lg:text-2xl">
+          <motion.span
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.5,
+              ease: "easeInOut",
+            }}
+            className="text-center text-[#181818] font-bold text-[36px] leading-11 tracking-[-0.72px] max-lg:text-2xl"
+          >
             Giá trị cốt lõi
-          </span>
+          </motion.span>
+
           <div className="flex gap-[110px] max-2xl:gap-[80px] max-xl:gap-[60px] max-lg:gap-[20px]">
             <div className="flex flex-col gap-2">
               {listCore.map((item, index) => (
-                <div
+                <motion.div
+                  initial={{ opacity: 0.0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.3,
+                    duration: 0.5,
+                    ease: "easeInOut",
+                  }}
                   className={cn(
-                    "py-6 px-4 flex gap-8 items-center ",
-                    selected.id === item.id && "border-l border-[#00B6FF]",
-                    selected.id === item.id && "bg-core"
+                    "py-6 px-4 flex gap-8 items-center cursor-pointer",
+                    selected === index && "border-l border-[#00B6FF]",
+                    selected === index && "bg-core"
                   )}
                   key={index}
-                  onClick={() => setSelected(item)}
+                  onClick={() => {
+                    setSelected(index);
+                  }}
                 >
                   <div>{item.icon}</div>
                   <div className="flex flex-col gap-4 max-lg:gap-2">
@@ -88,25 +111,145 @@ export default function CoreValueSection() {
                       {item.description}
                     </span>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
-            <AnimatePresence>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 1.05 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="relative h-fit"
-              >
-                <img src={selected.img} alt="" />
-                <div className="absolute top-[45%] left-0 transform -translate-x-1/2 -translate-y-1/2">
-                  <Icons.coreArrowIcon className="max-2xl:w-[100px] max-lg:w-[60px]" />
-                </div>
-              </motion.div>
-            </AnimatePresence>
+
+            <motion.div
+              initial={{ opacity: 0.0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.3,
+                duration: 0.5,
+                ease: "easeInOut",
+              }}
+              className="relative h-fit"
+            >
+              <img src={listCore[selected].img} alt="" />
+              <div className="absolute top-[45%] left-0 transform -translate-x-1/2 -translate-y-1/2">
+                <Icons.coreArrowIcon className="max-2xl:w-[100px] max-lg:w-[60px]" />
+              </div>
+            </motion.div>
+            {/* <motion.div
+              initial={{ opacity: 0.0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.3,
+                duration: 0.5,
+                ease: "easeInOut",
+              }}
+              className="relative h-fit"
+            >
+              <img src={selected.img} alt="" />
+              <div className="absolute top-[45%] left-0 transform -translate-x-1/2 -translate-y-1/2">
+                <Icons.coreArrowIcon className="max-2xl:w-[100px] max-lg:w-[60px]" />
+              </div>
+            </motion.div> */}
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function MobileCoreValue() {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    // Lắng nghe sự kiện "select" để cập nhật slide hiện tại
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+
+    // Lắng nghe sự kiện "reInit" trong trường hợp carousel được khởi tạo lại (ví dụ: thay đổi kích thước)
+    api.on("reInit", () => {
+      setCount(api.scrollSnapList().length);
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
+  return (
+    <section id="product" className="px-5 pt-[26px]">
+      <div className="flex flex-col">
+        <motion.span
+          initial={{ opacity: 0.0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+          className="text-center text-[#181818] text-4xl leading-11 font-bold tracking-[-0.72px]"
+        >
+          Giá trị cốt lõi
+        </motion.span>
+        <motion.div
+          initial={{ opacity: 0.0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+          className="mt-[13px] flex flex-col gap-[18px] items-center"
+        >
+          <Carousel
+            opts={{ align: "start" }}
+            className="w-full max-w-sm"
+            setApi={setApi}
+          >
+            <CarouselContent>
+              {Array.from({ length: 5 }).map((_, index) => (
+                <CarouselItem key={index} className="">
+                  <img src={listCore[index].img} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+
+          <div className="flex justify-center gap-2">
+            {Array.from({ length: count }).map((_, index) => (
+              <Button
+                key={index}
+                variant="ghost" // Sử dụng variant ghost hoặc icon cho nút chấm
+                size="icon"
+                className={`h-2 rounded-full p-0 transition-colors duration-200 ${
+                  index === current - 1
+                    ? "bg-[#005FEB] w-4"
+                    : "bg-[#A7ABC3] w-2"
+                }`}
+                onClick={() => api?.scrollTo(index)}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+          className="mt-[7px] py-6 px-4 border-l border-[#00B6FF] flex flex-col gap-4 bg-core"
+        >
+          <span className="text-[#414651] text-2xl leading-8 font-semibold">
+            {listCore[current - 1]?.title}
+          </span>
+          <span className="text-[#181818] text-sm leading-5">
+            {listCore[current - 1]?.description}
+          </span>
+        </motion.div>
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ interface LayoutProps {
 
 export default function LayoutPage({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-hidden">
       <HeaderSection />
       {children}
     </div>

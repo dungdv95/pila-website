@@ -132,6 +132,7 @@
 html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -218,4 +219,23 @@ ul.custom-list {
   list-style-type: disc;
   padding-left: 1.5rem;
   list-style: disc !important;
+}
+.bg-mobile-banner {
+  background: linear-gradient(
+    169deg,
+    #fff 73.3%,
+    #dafff4 86.64%,
+    #d6ffff 89.86%
+  );
+}
+.mobile-polygon {
+  clip-path: polygon(100% 0, 100% 93%, 72% 100%, 0 92%, 0 0);
+}
+.bg-mobile-mission {
+  background: linear-gradient(
+    257deg,
+    #e5ffff 7.91%,
+    #dafff4 24.07%,
+    #f7fffd 46.05%
+  );
 }
