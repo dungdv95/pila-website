@@ -12,12 +12,11 @@ export default function FooterSection() {
       <section className="mt-[84px] px-5 pt-[54px] pb-[121px] bg-footer">
         <div className="flex flex-col gap-8">
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.1,
-              duration: 0.4,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="w-[220px]"
           >
@@ -27,24 +26,22 @@ export default function FooterSection() {
           <Separator className="m-0 bg-[#D5E9E6]" />
           <div className="flex flex-col gap-8">
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.1,
-                duration: 0.4,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#1E1E1E] text-2xl leading-8 font-semibold"
             >
               Hãy cùng nhau kiến tạo niềm tin số!
             </motion.span>
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.1,
-                duration: 0.4,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#1E1E1E] text-lg leading-7"
             >
@@ -57,60 +54,55 @@ export default function FooterSection() {
           <Separator className="m-0 bg-[#D5E9E6]" />
           <div className="flex flex-col gap-6">
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.1,
-                duration: 0.4,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#0D152E] text-base font-medium tracking-[-0.6px]"
             >
               Tầm nhìn
             </motion.span>
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.1,
-                duration: 0.4,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#0D152E] text-base font-medium tracking-[-0.6px]"
             >
               Ứng dụng
             </motion.span>
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.1,
-                duration: 0.4,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#0D152E] text-base font-medium tracking-[-0.6px]"
             >
               Sản phẩm
             </motion.span>
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.1,
-                duration: 0.4,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#0D152E] text-base font-medium tracking-[-0.6px]"
             >
               Đối tác
             </motion.span>
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.1,
-                duration: 0.4,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#0D152E] text-base font-medium tracking-[-0.6px]"
             >
@@ -120,36 +112,33 @@ export default function FooterSection() {
           <Separator className="m-0 bg-[#D5E9E6]" />
           <div className="flex flex-col gap-6">
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.1,
-                duration: 0.4,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#0D152E] text-2xl leading-8 font-semibold"
             >
               Liên hệ
             </motion.span>
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.1,
-                duration: 0.4,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="mt-1.5 text-[#0D152E] text-base leading-6"
             >
               info@pila.vn
             </motion.span>
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.1,
-                duration: 0.4,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#0D152E] text-base leading-6"
             >
@@ -168,12 +157,11 @@ export default function FooterSection() {
           <div className="grid grid-cols-3 gap-[60px]">
             <div className="col-span-1">
               <motion.div
-                initial={{ opacity: 0.0, y: 40 }}
+                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.1,
-                  duration: 0.4,
-                  ease: "easeInOut",
+                  duration: 0.7,
                 }}
                 className="w-[300px] max-xl:w-[200px]"
               >
@@ -184,12 +172,11 @@ export default function FooterSection() {
               </motion.div>
             </div>
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.1,
-                duration: 0.4,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="col-span-2 flex items-center gap-[72px] max-2xl:gap-[50px] max-xl:gap-[30px]"
             >
@@ -213,24 +200,22 @@ export default function FooterSection() {
           <div className="grid grid-cols-3 gap-[60px]">
             <div className="col-span-1 flex flex-col gap-[30px]">
               <motion.span
-                initial={{ opacity: 0.0, y: 40 }}
+                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.1,
-                  duration: 0.4,
-                  ease: "easeInOut",
+                  duration: 0.7,
                 }}
                 className="text-[#0D152E] text-2xl leading-8 font-semibold"
               >
                 Hãy cùng nhau kiến tạo niềm tin số!
               </motion.span>
               <motion.span
-                initial={{ opacity: 0.0, y: 40 }}
+                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.1,
-                  duration: 0.4,
-                  ease: "easeInOut",
+                  duration: 0.7,
                 }}
                 className="text-[#1E1E1E] text-lg leading-7"
               >
@@ -243,12 +228,11 @@ export default function FooterSection() {
             <div className="col-span-2 flex gap-[30px] items-start">
               <div className="flex flex-col gap-6">
                 <motion.span
-                  initial={{ opacity: 0.0, y: 40 }}
+                  viewport={{ once: true }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    delay: 0.1,
-                    duration: 0.4,
-                    ease: "easeInOut",
+                    duration: 0.7,
                   }}
                   className="mt-1.5 text-[#0D152E] text-2xl leading-8 font-semibold"
                 >
@@ -256,12 +240,11 @@ export default function FooterSection() {
                 </motion.span>
 
                 <motion.span
-                  initial={{ opacity: 0.0, y: 40 }}
+                  viewport={{ once: true }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    delay: 0.1,
-                    duration: 0.4,
-                    ease: "easeInOut",
+                    duration: 0.7,
                   }}
                   className="text-[#1E1E1E] text-lg leading-7"
                 >
@@ -269,12 +252,11 @@ export default function FooterSection() {
                 </motion.span>
 
                 <motion.span
-                  initial={{ opacity: 0.0, y: 40 }}
+                  viewport={{ once: true }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    delay: 0.1,
-                    duration: 0.4,
-                    ease: "easeInOut",
+                    duration: 0.7,
                   }}
                   className="text-[#1E1E1E] text-lg leading-7"
                 >
@@ -283,12 +265,11 @@ export default function FooterSection() {
               </div>
               <div className="flex flex-col gap-6">
                 <motion.span
-                  initial={{ opacity: 0.0, y: 40 }}
+                  viewport={{ once: true }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    delay: 0.1,
-                    duration: 0.4,
-                    ease: "easeInOut",
+                    duration: 0.7,
                   }}
                   className="mt-1.5 text-[#0D152E] text-2xl leading-8 font-semibold"
                 >
@@ -296,36 +277,33 @@ export default function FooterSection() {
                 </motion.span>
 
                 <motion.span
-                  initial={{ opacity: 0.0, y: 40 }}
+                  viewport={{ once: true }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    delay: 0.1,
-                    duration: 0.4,
-                    ease: "easeInOut",
+                    duration: 0.7,
                   }}
                   className="text-[#1E1E1E] text-lg leading-7"
                 >
                   NDAChain - Nền tảng blockchain quốc gia
                 </motion.span>
                 <motion.span
-                  initial={{ opacity: 0.0, y: 40 }}
+                  viewport={{ once: true }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    delay: 0.1,
-                    duration: 0.4,
-                    ease: "easeInOut",
+                    duration: 0.7,
                   }}
                   className="text-[#1E1E1E] text-lg leading-7"
                 >
                   NDATrace - Nền tảng truy xuất xác thực nguồn gốc
                 </motion.span>
                 <motion.span
-                  initial={{ opacity: 0.0, y: 40 }}
+                  viewport={{ once: true }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    delay: 0.1,
-                    duration: 0.4,
-                    ease: "easeInOut",
+                    duration: 0.7,
                   }}
                   className="text-[#1E1E1E] text-lg leading-7"
                 >

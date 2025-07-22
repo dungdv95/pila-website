@@ -17,12 +17,11 @@ export default function BannerSection() {
           <div className=" pt-[116px] pb-[170px] bg-banner mobile-polygon">
             <div className="relative h-[427px] flex justify-center items-center">
               <motion.div
-                initial={{ opacity: 0.0, y: 40 }}
+                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.3,
-                  duration: 0.5,
-                  ease: "easeInOut",
+                  duration: 0.7,
                 }}
                 className="w-[620px] absolute top-0 left-[13%] max-[37rem]:left-[5%]"
               >
@@ -38,50 +37,35 @@ export default function BannerSection() {
         <div className="px-5 w-full absolute bottom-[-160px] flex justify-center max-[37rem]:bottom-[-180px] max-[28rem]:bottom-[-200px] max-[25rem]:bottom-[-210px]">
           <div className="flex flex-col gap-3">
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
-              className="text-center font-bold text-[36px] leading-11 tracking-[-0.72px]"
-              style={{
-                background:
-                  "linear-gradient(90deg, #181818 0%, #414141 30.97%)",
-                WebkitBackgroundClip: "text",
-                color: "transparent",
-              }}
+              className="text-center font-bold text-[36px] leading-11 tracking-[-0.72px] text-gradient"
             >
               Kiến tạo một nền Kinh tế số Việt Nam
             </motion.span>
 
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
-              className="text-center font-bold text-[36px] leading-11 tracking-[-0.72px]"
-              style={{
-                background:
-                  "linear-gradient(90deg, #181818 0%, #414141 30.97%)",
-                WebkitBackgroundClip: "text",
-                color: "transparent",
-              }}
+              className="text-center font-bold text-[36px] leading-11 tracking-[-0.72px] text-gradient"
             >
               Minh bạch - Hiệu quả - Thịnh vượng
             </motion.span>
 
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="mt-7 text-center text-[#181818] text-lg leading-7"
             >
@@ -102,50 +86,35 @@ export default function BannerSection() {
           <div className="mt-[100px] min-w-[650px] flex flex-col gap-10 max-lg:gap-5">
             <div className="flex flex-col gap-3 max-lg:gap-1">
               <motion.span
-                initial={{ opacity: 0.0, y: 40 }}
+                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.3,
-                  duration: 0.5,
-                  ease: "easeInOut",
+                  duration: 0.7,
                 }}
-                className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl"
-                style={{
-                  background:
-                    "linear-gradient(90deg, color(display-p3 0.094 0.094 0.094) 0%, color(display-p3 0.255 0.255 0.255) 30.97%)",
-                  WebkitBackgroundClip: "text",
-                  color: "transparent",
-                }}
+                className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl text-gradient"
               >
                 Kiến tạo một nền Kinh tế số Việt Nam
               </motion.span>
 
               <motion.span
-                initial={{ opacity: 0.0, y: 40 }}
+                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.3,
-                  duration: 0.5,
-                  ease: "easeInOut",
+                  duration: 0.7,
                 }}
-                className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl"
-                style={{
-                  background:
-                    "linear-gradient(90deg, color(display-p3 0.094 0.094 0.094) 0%, color(display-p3 0.255 0.255 0.255) 30.97%)",
-                  WebkitBackgroundClip: "text",
-                  color: "transparent",
-                }}
+                className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl text-gradient"
               >
                 Minh bạch - Hiệu quả - Thịnh vượng
               </motion.span>
             </div>
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#181818] text-lg leading-7 max-w-2xl max-lg:max-w-md max-lg:text-base"
             >
@@ -156,12 +125,11 @@ export default function BannerSection() {
           </div>
           <div className="min-h-fit w-full relative flex justify-center">
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="absolute top-10 !w-[780px] max-2xl:!w-[650px] max-xl:!w-[550px] max-lg:!w-[460px]
             right-[-195px] max-2xl:right-[-100px] max-xl:right-[-190px]"

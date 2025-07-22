@@ -11,12 +11,11 @@ export default function BuildingSection() {
     return (
       <section id="technology" className="px-5 mt-[96px] flex flex-col">
         <motion.span
-          initial={{ opacity: 0.0, y: 40 }}
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
-            duration: 0.5,
-            ease: "easeInOut",
+            duration: 0.7,
           }}
           className="text-center text-[#181818] text-4xl leading-11 tracking-[-0.72px] font-bold"
         >
@@ -27,12 +26,11 @@ export default function BuildingSection() {
           thế giới số
         </motion.span>
         <motion.span
-          initial={{ opacity: 0.0, y: 40 }}
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
-            duration: 0.5,
-            ease: "easeInOut",
+            duration: 0.7,
           }}
           className="mt-6 text-center text-[#202A3D] text-lg leading-7"
         >
@@ -41,12 +39,11 @@ export default function BuildingSection() {
         </motion.span>
 
         <motion.div
-          initial={{ opacity: 0.0, y: 40 }}
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
-            duration: 0.5,
-            ease: "easeInOut",
+            duration: 0.7,
           }}
           className="py-[18px] px-4 flex justify-center items-center"
         >
@@ -59,24 +56,22 @@ export default function BuildingSection() {
 
         <div className="mt-8 flex flex-col gap-4">
           <motion.span
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="text-[#181818] text-2xl leading-8 font-bold"
           >
             NDAChain - Nền tảng Blockchain quốc gia
           </motion.span>
           <motion.span
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="mt-2 text-[#181818] text-sm leading-6"
           >
@@ -88,12 +83,11 @@ export default function BuildingSection() {
             người sử dụng
           </motion.span>
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="mt-2 flex gap-3 items-center"
           >
@@ -105,12 +99,11 @@ export default function BuildingSection() {
             </span>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="mt-2 flex gap-3 items-center"
           >
@@ -120,12 +113,11 @@ export default function BuildingSection() {
             <span className="text-sm leading-5">Xác thực dữ liệu</span>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="mt-2 flex gap-3 items-center"
           >
@@ -137,12 +129,11 @@ export default function BuildingSection() {
             </span>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="mt-2 flex gap-3 items-center"
           >
@@ -154,12 +145,11 @@ export default function BuildingSection() {
         </div>
         <div className="mt-[70px] flex flex-col gap-10">
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="flex justify-center items-center"
           >
@@ -172,12 +162,11 @@ export default function BuildingSection() {
 
           <div className="mt-1 flex flex-col gap-6">
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#181818] text-2xl leading-8 font-bold"
             >
@@ -185,12 +174,11 @@ export default function BuildingSection() {
             </motion.span>
 
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="mt-2 text-[#181818] text-sm leading-6"
             >
@@ -202,12 +190,11 @@ export default function BuildingSection() {
           </div>
           <div className="flex flex-col gap-6">
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="flex gap-3 items-center"
             >
@@ -219,12 +206,11 @@ export default function BuildingSection() {
               </span>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="flex gap-3 items-center"
             >
@@ -236,12 +222,11 @@ export default function BuildingSection() {
               </span>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="flex gap-3 items-center"
             >
@@ -252,12 +237,11 @@ export default function BuildingSection() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="flex gap-3 items-center"
             >
@@ -273,12 +257,11 @@ export default function BuildingSection() {
 
         <div className="mt-[60px] flex flex-col gap-8">
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="flex justify-center items-center"
           >
@@ -291,24 +274,22 @@ export default function BuildingSection() {
 
           <div className="mt-7 flex flex-col gap-6">
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#181818] text-2xl leading-8 font-bold"
             >
               NDA SDK - Bộ công cụ giải pháp tích hợp đa nền tảng
             </motion.span>
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="mt-2 text-[#181818] text-sm leading-6"
             >
@@ -323,12 +304,11 @@ export default function BuildingSection() {
           </div>
           <div className="flex flex-col gap-6">
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="flex gap-3 items-center"
             >
@@ -340,12 +320,11 @@ export default function BuildingSection() {
               </span>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="flex gap-3 items-center"
             >
@@ -357,12 +336,11 @@ export default function BuildingSection() {
               </span>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="flex gap-3 items-center"
             >
@@ -384,24 +362,22 @@ export default function BuildingSection() {
       <div className="container mx-auto px-[200px] max-2xl:px-20 max-xl:px-6 flex flex-col gap-11">
         <div className="flex flex-col gap-4 items-center">
           <motion.span
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="text-[#181818] font-bold text-[36px] leading-11 tracking-[-0.72px] max-lg:text-2xl"
           >
             Xây dựng hạ tầng niềm tin cho thế giới số
           </motion.span>
           <motion.span
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="text-[#202A3D] text-lg leading-7 max-lg:text-base"
           >
@@ -411,24 +387,22 @@ export default function BuildingSection() {
         <div className="relative flex items-center gap-[30px] max-xl:gap-3 max-lg:gap-2">
           <div className="w-1/2 flex flex-col gap-6 max-xl:gap-3 max-lg:gap-2">
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#181818] text-2xl leading-8 font-bold max-xl:text-xl max-lg:text-[17px] max-lg:leading-6"
             >
               NDAChain - Nền tảng Blockchain quốc gia
             </motion.span>
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#181818] text-base leading-6 max-xl:text-sm max-lg:text-xs"
             >
@@ -442,12 +416,11 @@ export default function BuildingSection() {
 
             <div className="mt-[11px] flex flex-col gap-6 max-xl:gap-4 max-lg:gap-3">
               <motion.div
-                initial={{ opacity: 0.0, y: 40 }}
+                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.3,
-                  duration: 0.5,
-                  ease: "easeInOut",
+                  duration: 0.7,
                 }}
                 className="grid grid-cols-2 gap-x-6 max-lg:gap-[10px]"
               >
@@ -469,12 +442,11 @@ export default function BuildingSection() {
                 </div>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0.0, y: 40 }}
+                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.3,
-                  duration: 0.5,
-                  ease: "easeInOut",
+                  duration: 0.7,
                 }}
                 className="grid grid-cols-2 gap-x-6 max-lg:gap-[10px]"
               >
@@ -498,12 +470,11 @@ export default function BuildingSection() {
             </div>
           </div>
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className=" flex justify-center items-center w-[700px] max-2xl:w-[550px]
           max-xl:w-[600px] max-lg:w-[430px]"
@@ -515,12 +486,11 @@ export default function BuildingSection() {
             />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="absolute bottom-[-30%] left-[-38%] w-[1300px] max-2xl:left-[-40%] max-2xl:bottom-[-55%] max-xl:w-[1100px] max-xl:left-[-45%] max-xl:bottom-[-37%] 
           max-lg:w-[950px] max-lg:left-[-57%] max-lg:bottom-[-48%]"
@@ -533,12 +503,11 @@ export default function BuildingSection() {
         </div>
         <div className="flex items-center gap-12 max-xl:gap-8 max-lg:gap-6">
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="flex justify-center items-center w-[650px] max-2xl:w-[550px]
           max-xl:w-[500px] max-lg:w-[430px]"
@@ -552,12 +521,11 @@ export default function BuildingSection() {
 
           <div className="w-1/2 flex flex-col gap-6 max-lg:gap-3">
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#181818] text-2xl leading-8 font-bold max-xl:text-xl max-lg:text-[17px] max-lg:leading-6"
             >
@@ -565,12 +533,11 @@ export default function BuildingSection() {
             </motion.span>
 
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#181818] text-base leading-6 max-xl:text-sm max-lg:text-xs"
             >
@@ -581,12 +548,11 @@ export default function BuildingSection() {
             </motion.span>
 
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="mt-4 grid grid-cols-2 gap-x-6 max-lg:gap-[10px]"
             >
@@ -609,12 +575,11 @@ export default function BuildingSection() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="grid grid-cols-2 gap-x-6 max-lg:gap-[10px]"
             >
@@ -640,24 +605,22 @@ export default function BuildingSection() {
         <div className="relative flex items-center gap-[30px] max-xl:gap-3 max-lg:gap-2">
           <div className="w-1/2 flex flex-col gap-6 max-xl:gap-3 max-lg:gap-2">
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#181818] text-2xl leading-8 font-bold max-xl:text-xl max-lg:text-[17px] max-lg:leading-6"
             >
               NDA SDK - Bộ công cụ giải pháp tích hợp đa nền tảng
             </motion.span>
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#181818] text-base leading-6 max-xl:text-sm max-lg:text-xs"
             >
@@ -672,12 +635,11 @@ export default function BuildingSection() {
 
             <div className="mt-[11px] flex flex-col gap-6 max-xl:gap-4 max-lg:gap-3">
               <motion.div
-                initial={{ opacity: 0.0, y: 40 }}
+                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.3,
-                  duration: 0.5,
-                  ease: "easeInOut",
+                  duration: 0.7,
                 }}
                 className="grid grid-cols-2 gap-x-6 max-lg:gap-[10px]"
               >
@@ -699,12 +661,11 @@ export default function BuildingSection() {
                 </div>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0.0, y: 40 }}
+                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.3,
-                  duration: 0.5,
-                  ease: "easeInOut",
+                  duration: 0.7,
                 }}
                 className="grid grid-cols-2 gap-x-6 max-lg:gap-[10px]"
               >
@@ -720,12 +681,11 @@ export default function BuildingSection() {
             </div>
           </div>
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="flex justify-center items-center w-[670px] max-2xl:w-[550px]
           max-xl:w-[560px] max-lg:w-[380px]"

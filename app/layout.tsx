@@ -20,7 +20,27 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Pila",
+  metadataBase: new URL("https://pila-website.vercel.app"),
+  title: "Pila Corporation",
+  openGraph: {
+    title: "Pila Corporation",
+    images: [
+      {
+        url: `https://pila-website.vercel.app/images/thumbnail.jpg`,
+        alt: "Hình ảnh",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pila Corporation",
+    images: [
+      {
+        url: `https://pila-website.vercel.app/images/thumbnail.jpg`,
+        alt: "Hình ảnh",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

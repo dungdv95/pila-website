@@ -239,3 +239,15 @@ ul.custom-list {
     #f7fffd 46.05%
   );
 }
+.text-gradient {
+  background: linear-gradient(90deg, #181818 0%, #414141 30.97%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient-vision {
+  background: linear-gradient(90deg, #181818 0%, #7e7e7e 30.97%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

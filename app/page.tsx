@@ -13,32 +13,30 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 
 export default function Page() {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
+        initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.1,
-          duration: 0.4,
-          ease: "easeInOut",
+          duration: 0.5,
         }}
+        viewport={{ once: true }}
       >
         <BannerSection />
       </motion.div>
 
       <VisionSection />
       <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
+        initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.1,
-          duration: 0.4,
-          ease: "easeInOut",
+          duration: 0.5,
         }}
+        viewport={{ once: true }}
       >
         <MissionPilaSection />
       </motion.div>
@@ -48,13 +46,12 @@ export default function Page() {
       <BuildingSection />
       <PartnerSection />
       <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
+        initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.1,
-          duration: 0.4,
-          ease: "easeInOut",
+          duration: 0.5,
         }}
+        viewport={{ once: true }}
       >
         <FooterSection />
       </motion.div>

@@ -74,12 +74,11 @@ export default function CoreValueSection() {
       <div className="container mx-auto py-16 px-[100px] max-2xl:px-4 max-xl:px-2">
         <div className="flex flex-col gap-[52px]">
           <motion.span
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="text-center text-[#181818] font-bold text-[36px] leading-11 tracking-[-0.72px] max-lg:text-2xl"
           >
@@ -90,12 +89,11 @@ export default function CoreValueSection() {
             <div className="flex flex-col gap-2">
               {listCore.map((item, index) => (
                 <motion.div
-                  initial={{ opacity: 0.0, y: 40 }}
+                  viewport={{ once: true }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    delay: 0.3,
-                    duration: 0.5,
-                    ease: "easeInOut",
+                    duration: 0.7,
                   }}
                   className={cn(
                     "py-6 px-4 flex gap-8 items-center cursor-pointer",
@@ -120,12 +118,11 @@ export default function CoreValueSection() {
               ))}
             </div>
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
             >
               <AnimatePresence mode="wait">
@@ -180,24 +177,22 @@ function MobileCoreValue() {
     <section id="product" className="px-5 pt-[26px]">
       <div className="flex flex-col">
         <motion.span
-          initial={{ opacity: 0.0, y: 40 }}
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
-            duration: 0.5,
-            ease: "easeInOut",
+            duration: 0.7,
           }}
           className="text-center text-[#181818] text-4xl leading-11 font-bold tracking-[-0.72px]"
         >
           Giá trị cốt lõi
         </motion.span>
         <motion.div
-          initial={{ opacity: 0.0, y: 40 }}
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
-            duration: 0.5,
-            ease: "easeInOut",
+            duration: 0.7,
           }}
           className="mt-[13px] flex flex-col gap-[18px] items-center"
         >
@@ -233,12 +228,11 @@ function MobileCoreValue() {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0.0, y: 40 }}
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
-            duration: 0.5,
-            ease: "easeInOut",
+            duration: 0.7,
           }}
         >
           <AnimatePresence mode="wait">

@@ -40,30 +40,23 @@ export default function VisionSection() {
       <section id="vision" className="mt-[300px] overflow-hidden bg-white">
         <div className="flex flex-col gap-4">
           <motion.span
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
-            className="px-5 text-center font-bold text-[36px] leading-11 tracking-[-0.72px]"
-            style={{
-              background: "linear-gradient(90deg, #181818 0%, #7E7E7E 30.97%)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-            }}
+            className="px-5 text-center font-bold text-[36px] leading-11 tracking-[-0.72px] text-gradient-vision"
           >
             Tầm nhìn
           </motion.span>
 
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="px-5 text-center text-[#1E1E1E] text-[18px] leading-7"
           >
@@ -79,12 +72,11 @@ export default function VisionSection() {
 
           <div className="mt-[18px] flex flex-col gap-4">
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="flex"
             >
@@ -122,12 +114,11 @@ export default function VisionSection() {
               </div>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="flex"
             >
@@ -166,12 +157,11 @@ export default function VisionSection() {
             </motion.div>
           </div>
           <motion.span
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="px-5 mt-[18px] text-center text-[#717680] text-lg leading-7"
           >
@@ -189,31 +179,23 @@ export default function VisionSection() {
         <div className="flex flex-col gap-[25px]">
           <div className="max-w-4xl flex flex-col gap-4">
             <motion.span
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
-              className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl"
-              style={{
-                background:
-                  "linear-gradient(90deg, #181818 0%, #7E7E7E 30.97%)",
-                WebkitBackgroundClip: "text",
-                color: "transparent",
-              }}
+              className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl text-gradient"
             >
               Tầm nhìn
             </motion.span>
 
             <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
+                duration: 0.7,
               }}
               className="text-[#1E1E1E] text-lg leading-7 max-lg:text-base"
             >
@@ -228,12 +210,11 @@ export default function VisionSection() {
             </motion.div>
           </div>
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="py-1 grid grid-cols-4 gap-x-4"
           >
@@ -261,12 +242,11 @@ export default function VisionSection() {
           </motion.div>
 
           <motion.span
-            initial={{ opacity: 0.0, y: 40 }}
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
+              duration: 0.7,
             }}
             className="mt-[11px] max-w-4xl text-[#717680] text-lg leading-7 max-lg:text-sm"
           >

@@ -59,12 +59,11 @@ export default function HeaderSection() {
     return (
       <header className="fixed top-0 left-0 right-0 z-50 w-full">
         <motion.div
-          initial={{ opacity: 0.0, y: -40 }}
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
+            duration: 0.9,
           }}
           className="py-6 px-4 bg-white/80"
         >
@@ -184,12 +183,11 @@ export default function HeaderSection() {
     <header className="fixed top-0 left-0 right-0 z-50 w-full">
       <div className="container mx-auto pt-7 px-[100px] max-2xl:px-4 max-xl:px-2">
         <motion.div
-          initial={{ opacity: 0.0, y: -40 }}
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
+            duration: 1,
           }}
           className="px-10 py-4 flex h-[74px] items-center justify-between bg-white rounded-full"
         >
