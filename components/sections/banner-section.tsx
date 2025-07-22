@@ -12,7 +12,7 @@ export default function BannerSection() {
 
   if (isMobile) {
     return (
-      <section id="banner" className="relative ">
+      <section id="banner" className="relative pb-[300px]">
         <div className="overflow-hidden">
           <div className=" pt-[116px] pb-[170px] bg-banner mobile-polygon">
             <div className="relative h-[427px] flex justify-center items-center">
@@ -33,7 +33,10 @@ export default function BannerSection() {
             </div>
           </div>
         </div>
-        <div className="px-5 w-full absolute bottom-[-160px] flex justify-center max-[37rem]:bottom-[-180px] max-[28rem]:bottom-[-200px] max-[25rem]:bottom-[-210px]">
+        <div
+          className="px-5 w-full absolute bottom-[140px] flex justify-center max-[37rem]:bottom-[120px] 
+        max-[28rem]:bottom-[100px] max-[25rem]:bottom-[78px]"
+        >
           <div className="flex flex-col gap-3">
             <motion.span
               initial={{ opacity: 0, y: 40 }}
