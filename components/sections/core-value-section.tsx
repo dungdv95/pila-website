@@ -21,6 +21,7 @@ const listCore = [
     description:
       "Chúng tôi tiên phong ứng dụng công nghệ đột phá như Blockchain, Big Data và Phygital để tạo ra các giải pháp định danh và xác thực tiên tiến, góp phần giải quyết các vấn đề cốt lõi của nền kinh tế số.",
     img: "/images/core-renew.png",
+    code: "innovative",
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ const listCore = [
     description:
       "Chúng tôi phát triển hệ thống quản trị và xác thực dữ liệu đáng tin cậy, nơi thông tin có thể kiểm chứng, phục vụ việc ra quyết định hiệu quả và tăng cường kết nối số.",
     img: "/images/dlmb.png",
+    code: "informative",
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ const listCore = [
     description:
       "Chúng tôi phát triển hệ thống quản trị và xác thực dữ liệu đáng tin cậy, nơi thông tin có thể kiểm chứng, phục vụ việc ra quyết định hiệu quả và tăng cường kết nối số.",
     img: "/images/adaptive.png",
+    code: "adaptive",
   },
   {
     id: 4,
@@ -45,6 +48,7 @@ const listCore = [
     description:
       "Chúng tôi đặt niềm tin số làm trọng tâm, đảm bảo bảo mật, quyền riêng tư và kiểm soát dữ liệu cho người dùng, đồng thời tuân thủ chặt chẽ quy định pháp luật trong mọi giải pháp công nghệ.",
     img: "/images/trust.png",
+    code: "trust",
   },
   {
     id: 5,
@@ -53,11 +57,12 @@ const listCore = [
     description:
       "Mỗi sản phẩm và dịch vụ của PILA không chỉ mang lại hiệu quả kinh tế mà còn hướng đến tạo tác động tích cực và bền vững cho xã hội, góp phần xây dựng một hệ sinh thái số công bằng và thịnh vượng.",
     img: "/images/impact.png",
+    code: "impactful",
   },
 ];
 
 export default function CoreValueSection() {
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(listCore[0]);
 
   const isMobile = useIsMobile();
   if (isMobile) {
@@ -94,12 +99,12 @@ export default function CoreValueSection() {
                   }}
                   className={cn(
                     "py-6 px-4 flex gap-8 items-center cursor-pointer",
-                    selected === index && "border-l border-[#00B6FF]",
-                    selected === index && "bg-core"
+                    selected.id === item.id && "border-l border-[#00B6FF]",
+                    selected.id === item.id && "bg-core"
                   )}
                   key={index}
                   onClick={() => {
-                    setSelected(index);
+                    setSelected(item);
                   }}
                 >
                   <div>{item.icon}</div>
@@ -114,7 +119,6 @@ export default function CoreValueSection() {
                 </motion.div>
               ))}
             </div>
-
             <motion.div
               initial={{ opacity: 0.0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -123,28 +127,23 @@ export default function CoreValueSection() {
                 duration: 0.5,
                 ease: "easeInOut",
               }}
-              className="relative h-fit"
             >
-              <img src={listCore[selected].img} alt="" />
-              <div className="absolute top-[45%] left-0 transform -translate-x-1/2 -translate-y-1/2">
-                <Icons.coreArrowIcon className="max-2xl:w-[100px] max-lg:w-[60px]" />
-              </div>
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={selected ? selected.code : "empty"}
+                  initial={{ x: -50, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  exit={{ x: 10, opacity: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className="relative h-fit"
+                >
+                  <img src={selected ? selected.img : ""} alt="" />
+                  <div className="absolute top-[45%] left-0 transform -translate-x-1/2 -translate-y-1/2">
+                    <Icons.coreArrowIcon className="max-2xl:w-[100px] max-lg:w-[60px]" />
+                  </div>
+                </motion.div>
+              </AnimatePresence>
             </motion.div>
-            {/* <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
-              }}
-              className="relative h-fit"
-            >
-              <img src={selected.img} alt="" />
-              <div className="absolute top-[45%] left-0 transform -translate-x-1/2 -translate-y-1/2">
-                <Icons.coreArrowIcon className="max-2xl:w-[100px] max-lg:w-[60px]" />
-              </div>
-            </motion.div> */}
           </div>
         </div>
       </div>
@@ -241,14 +240,24 @@ function MobileCoreValue() {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className="mt-[7px] py-6 px-4 border-l border-[#00B6FF] flex flex-col gap-4 bg-core"
         >
-          <span className="text-[#414651] text-2xl leading-8 font-semibold">
-            {listCore[current - 1]?.title}
-          </span>
-          <span className="text-[#181818] text-sm leading-5">
-            {listCore[current - 1]?.description}
-          </span>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={listCore[current - 1]?.code}
+              initial={{ y: 10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -20, opacity: 0 }}
+              transition={{ duration: 0.4 }}
+              className="mt-[7px] py-6 px-4 border-l border-[#00B6FF] flex flex-col gap-4 bg-core"
+            >
+              <span className="text-[#414651] text-2xl leading-8 font-semibold">
+                {listCore[current - 1]?.title}
+              </span>
+              <span className="text-[#181818] text-sm leading-5">
+                {listCore[current - 1]?.description}
+              </span>
+            </motion.div>
+          </AnimatePresence>
         </motion.div>
       </div>
     </section>

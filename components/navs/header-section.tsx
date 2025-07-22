@@ -118,7 +118,9 @@ export default function HeaderSection() {
                         wait().then(() => {
                           const el = document.getElementById("banner");
                           if (el) {
-                            el.scrollIntoView({ behavior: "smooth" });
+                            el.scrollIntoView({
+                              behavior: "smooth",
+                            });
                           }
                         });
                         event.preventDefault();
@@ -146,8 +148,20 @@ export default function HeaderSection() {
                                   item.idSection
                                 );
                                 if (el) {
-                                  el.scrollIntoView({ behavior: "smooth" });
+                                  const rect = el.getBoundingClientRect();
+                                  const scrollTop =
+                                    window.pageYOffset ||
+                                    document.documentElement.scrollTop;
+                                  const offset = 90; // số px muốn dịch xuống thêm
+                                  const targetY = rect.top + scrollTop - offset;
+                                  window.scrollTo({
+                                    top: targetY,
+                                    behavior: "smooth",
+                                  });
                                 }
+                                // if (el) {
+                                //   el.scrollIntoView({ behavior: "smooth" });
+                                // }
                               });
                               event.preventDefault();
                             }}
@@ -210,8 +224,20 @@ export default function HeaderSection() {
                   wait().then(() => {
                     const el = document.getElementById(item.idSection);
                     if (el) {
-                      el.scrollIntoView({ behavior: "smooth" });
+                      const rect = el.getBoundingClientRect();
+                      const scrollTop =
+                        window.pageYOffset ||
+                        document.documentElement.scrollTop;
+                      const offset = 105; // số px muốn dịch xuống thêm
+                      const targetY = rect.top + scrollTop - offset;
+                      window.scrollTo({ top: targetY, behavior: "smooth" });
                     }
+                    // if (el) {
+                    //   el.scrollIntoView({
+                    //     behavior: "smooth",
+                    //     block: "start",
+                    //   });
+                    // }
                   });
                   event.preventDefault();
                 }}
