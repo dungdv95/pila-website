@@ -9,11 +9,7 @@ import MissionPilaSection from "@/components/sections/mission-pila-section";
 import PartnerSection from "@/components/sections/partner-section";
 import VisionSection from "@/components/sections/vision-section";
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 
 export default function Page() {
   return (

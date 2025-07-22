@@ -1,10 +1,11 @@
 "use client";
 
-import { Zap } from "lucide-react";
+import { motion } from "motion/react";
 import Link from "next/link";
-import { Button } from "../ui/button";
-import { Icons } from "../icons";
+import { useState } from "react";
 import { useIsMobile } from "../hooks/use-mobile";
+import { Icons } from "../icons";
+import { Button } from "../ui/button";
 import {
   Sheet,
   SheetContent,
@@ -13,8 +14,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../ui/sheet";
-import { useState } from "react";
-import { motion } from "motion/react";
 
 const listNav = [
   {

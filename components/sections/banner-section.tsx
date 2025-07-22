@@ -1,11 +1,7 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import { useIsMobile } from "../hooks/use-mobile";
 import { motion } from "motion/react";
+import { useIsMobile } from "../hooks/use-mobile";
 
 export default function BannerSection() {
   const isMobile = useIsMobile();
