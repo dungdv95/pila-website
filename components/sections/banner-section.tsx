@@ -17,11 +17,10 @@ export default function BannerSection() {
           <div className=" pt-[116px] pb-[170px] bg-banner mobile-polygon">
             <div className="relative h-[427px] flex justify-center items-center">
               <motion.div
-                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.9,
                 }}
                 className="w-[620px] absolute top-0 left-[13%] max-[37rem]:left-[5%]"
               >
@@ -37,11 +36,10 @@ export default function BannerSection() {
         <div className="px-5 w-full absolute bottom-[-160px] flex justify-center max-[37rem]:bottom-[-180px] max-[28rem]:bottom-[-200px] max-[25rem]:bottom-[-210px]">
           <div className="flex flex-col gap-3">
             <motion.span
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="text-center font-bold text-[36px] leading-11 tracking-[-0.72px] text-gradient"
             >
@@ -49,11 +47,10 @@ export default function BannerSection() {
             </motion.span>
 
             <motion.span
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="text-center font-bold text-[36px] leading-11 tracking-[-0.72px] text-gradient"
             >
@@ -61,11 +58,10 @@ export default function BannerSection() {
             </motion.span>
 
             <motion.span
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="mt-7 text-center text-[#181818] text-lg leading-7"
             >
@@ -86,11 +82,10 @@ export default function BannerSection() {
           <div className="mt-[100px] min-w-[650px] flex flex-col gap-10 max-lg:gap-5">
             <div className="flex flex-col gap-3 max-lg:gap-1">
               <motion.span
-                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.9,
                 }}
                 className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl text-gradient"
               >
@@ -98,11 +93,10 @@ export default function BannerSection() {
               </motion.span>
 
               <motion.span
-                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.9,
                 }}
                 className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl text-gradient"
               >
@@ -110,11 +104,10 @@ export default function BannerSection() {
               </motion.span>
             </div>
             <motion.span
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="text-[#181818] text-lg leading-7 max-w-2xl max-lg:max-w-md max-lg:text-base"
             >
@@ -125,11 +118,10 @@ export default function BannerSection() {
           </div>
           <div className="min-h-fit w-full relative flex justify-center">
             <motion.div
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="absolute top-10 !w-[780px] max-2xl:!w-[650px] max-xl:!w-[550px] max-lg:!w-[460px]
             right-[-195px] max-2xl:right-[-100px] max-xl:right-[-190px]"

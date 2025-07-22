@@ -59,7 +59,6 @@ export default function HeaderSection() {
     return (
       <header className="fixed top-0 left-0 right-0 z-50 w-full">
         <motion.div
-          viewport={{ once: true }}
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -183,11 +182,10 @@ export default function HeaderSection() {
     <header className="fixed top-0 left-0 right-0 z-50 w-full">
       <div className="container mx-auto pt-7 px-[100px] max-2xl:px-4 max-xl:px-2">
         <motion.div
-          viewport={{ once: true }}
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 1,
+            duration: 0.9,
           }}
           className="px-10 py-4 flex h-[74px] items-center justify-between bg-white rounded-full"
         >

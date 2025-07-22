@@ -108,11 +108,10 @@ export default function PartnerSection() {
         <div className="relative flex flex-col gap-[100px]">
           <div className="flex flex-col gap-4 items-center">
             <motion.span
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="text-[#181818] font-bold text-[36px] leading-11 tracking-[-0.72px] max-lg:text-2xl"
             >
@@ -120,11 +119,10 @@ export default function PartnerSection() {
             </motion.span>
 
             <motion.span
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="text-center text-[#202A3D] text-lg leading-7 max-lg:text-base"
             >
@@ -140,11 +138,10 @@ export default function PartnerSection() {
           <div className="grid grid-cols-3 gap-[31px] max-xl:gap-4 max-lg:grid-cols-2 max-lg:gap-5">
             {listPartner.map((item) => (
               <motion.div
-                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.9,
                 }}
                 key={item.id}
                 className="p-6 flex flex-col gap-[22px] border border-[#AED0FF] rounded-[8px] bg-linear-to-b from-[#FFFFFFCC] to-[#FFFFFF00]"
@@ -167,11 +164,10 @@ export default function PartnerSection() {
             ))}
           </div>
           <motion.div
-            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.7,
+              duration: 0.9,
             }}
             className="w-full absolute bottom-[-5%] left-0 max-2xl:bottom-[-5%] max-xl:bottom-[1%] max-lg:bottom-[15%]"
           >
@@ -212,22 +208,20 @@ function MobilePartner() {
     <section id="partner" className="mt-[68px] flex flex-col gap-12">
       <div className="px-5 flex flex-col gap-6">
         <motion.span
-          viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.7,
+            duration: 0.9,
           }}
           className="text-center text-[#181818] text-4xl leading-11 tracking-[-0.72px]"
         >
           Đối tác chiến lược
         </motion.span>
         <motion.span
-          viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.7,
+            duration: 0.9,
           }}
           className="text-center text-[#202A3D] text-lg leading-7"
         >
@@ -248,11 +242,10 @@ function MobilePartner() {
                 <CarouselItem key={index} className="">
                   <div className="flex flex-col gap-[29px]">
                     <motion.div
-                      viewport={{ once: true }}
                       initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
-                        duration: 0.7,
+                        duration: 0.9,
                       }}
                       className="p-6 flex flex-col gap-[22px] border border-[#AED0FF] rounded-[8px] bg-linear-to-b from-[#FFFFFFCC] to-[#FFFFFF00]"
                     >
@@ -272,11 +265,10 @@ function MobilePartner() {
                       </span>
                     </motion.div>
                     <motion.div
-                      viewport={{ once: true }}
                       initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
-                        duration: 0.7,
+                        duration: 0.9,
                       }}
                       className="p-6 flex flex-col gap-[22px] border border-[#AED0FF] rounded-[8px] bg-linear-to-b from-[#FFFFFFCC] to-[#FFFFFF00]"
                     >

@@ -22,9 +22,8 @@ export default function Page() {
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 0.5,
+          duration: 0.6,
         }}
-        viewport={{ once: true }}
       >
         <BannerSection />
       </motion.div>
@@ -34,9 +33,8 @@ export default function Page() {
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 0.5,
+          duration: 0.6,
         }}
-        viewport={{ once: true }}
       >
         <MissionPilaSection />
       </motion.div>
@@ -49,9 +47,8 @@ export default function Page() {
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 0.5,
+          duration: 0.6,
         }}
-        viewport={{ once: true }}
       >
         <FooterSection />
       </motion.div>

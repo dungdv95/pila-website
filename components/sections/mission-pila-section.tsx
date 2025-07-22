@@ -13,11 +13,10 @@ export default function MissionPilaSection() {
         className="relative mt-[77px] py-[30px] bg-mobile-mission"
       >
         <motion.div
-          viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.7,
+            duration: 0.9,
           }}
           className="absolute top-[-130px] w-[1200px] left-[-17%] max-[45rem]:left-[-22%] max-[40rem]:left-[-31%] max-[35rem]:left-[-42%]
         max-[31rem]:left-[-54%] max-[28rem]:left-[-65%] max-[26.9rem]:left-[-69%] max-[26rem]:left-[-74%] max-[25rem]:left-[-82%] max-[23.75rem]:left-[-87%]
@@ -33,11 +32,10 @@ export default function MissionPilaSection() {
         <div className="">
           <div className="px-5 mt-[525px] flex flex-col gap-[31px]">
             <motion.span
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="text-center font-bold text-[36px] leading-[44px] tracking-[-0.02em] text-gradient-vision"
             >
@@ -46,11 +44,10 @@ export default function MissionPilaSection() {
 
             <div className="flex flex-col gap-6">
               <motion.span
-                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.9,
                 }}
                 className="text-center text-[#202A3D] text-lg leading-7"
               >
@@ -59,11 +56,10 @@ export default function MissionPilaSection() {
                 thế giới số; từ bảo mật, minh bạch đến an toàn thông tin.
               </motion.span>
               <motion.span
-                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.9,
                 }}
                 className="text-center text-[#202A3D] text-lg leading-7"
               >
@@ -71,11 +67,10 @@ export default function MissionPilaSection() {
                 tiên tiến như
               </motion.span>
               <motion.div
-                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.9,
                 }}
                 className="flex justify-center"
               >
@@ -87,11 +82,10 @@ export default function MissionPilaSection() {
                 </ul>
               </motion.div>
               <motion.span
-                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.9,
                 }}
                 className="text-center text-[#202A3D] text-lg leading-7"
               >
@@ -116,11 +110,10 @@ export default function MissionPilaSection() {
         <div className="flex items-center">
           <div className="w-1/2 flex flex-col gap-[31px] border-l border-gradient pl-8 max-xl:gap-6 max-lg:gap-4">
             <motion.span
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="font-bold text-[36px] leading-[44px] tracking-[-0.02em] bg-gradient-to-r from-[#181818] via-[#7E7E7E] to-[#7E7E7E] text-transparent bg-clip-text max-lg:text-xl"
             >
@@ -129,11 +122,10 @@ export default function MissionPilaSection() {
 
             <div className="flex flex-col gap-6 max-xl:gap-4">
               <motion.span
-                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.9,
                 }}
                 className="text-[#202A3D] text-lg leading-7 max-lg:text-base"
               >
@@ -143,11 +135,10 @@ export default function MissionPilaSection() {
               </motion.span>
 
               <motion.span
-                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.9,
                 }}
                 className="text-[#202A3D] text-lg leading-7 max-lg:text-base"
               >
@@ -156,11 +147,10 @@ export default function MissionPilaSection() {
               </motion.span>
 
               <motion.ul
-                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.9,
                 }}
                 className="!list-disc list-inside custom-list text-[#202A3D] text-lg leading-7 max-lg:text-base"
               >
@@ -171,11 +161,10 @@ export default function MissionPilaSection() {
               </motion.ul>
 
               <motion.span
-                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.9,
                 }}
                 className="text-[#202A3D] text-lg leading-7 max-lg:text-base"
               >
@@ -188,11 +177,10 @@ export default function MissionPilaSection() {
           </div>
           <div className="relative flex justify-center items-center">
             <motion.div
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="absolute w-[1050px] top-[-380px] left-[-100px]
               max-2xl:w-[900px] max-2xl:top-[-310px] max-2xl:left-[-70px]

@@ -40,11 +40,10 @@ export default function VisionSection() {
       <section id="vision" className="mt-[300px] overflow-hidden bg-white">
         <div className="flex flex-col gap-4">
           <motion.span
-            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.7,
+              duration: 0.9,
             }}
             className="px-5 text-center font-bold text-[36px] leading-11 tracking-[-0.72px] text-gradient-vision"
           >
@@ -52,11 +51,10 @@ export default function VisionSection() {
           </motion.span>
 
           <motion.div
-            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.7,
+              duration: 0.9,
             }}
             className="px-5 text-center text-[#1E1E1E] text-[18px] leading-7"
           >
@@ -72,11 +70,10 @@ export default function VisionSection() {
 
           <div className="mt-[18px] flex flex-col gap-4">
             <motion.div
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="flex"
             >
@@ -114,11 +111,10 @@ export default function VisionSection() {
               </div>
             </motion.div>
             <motion.div
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="flex"
             >
@@ -157,11 +153,10 @@ export default function VisionSection() {
             </motion.div>
           </div>
           <motion.span
-            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.7,
+              duration: 0.9,
             }}
             className="px-5 mt-[18px] text-center text-[#717680] text-lg leading-7"
           >
@@ -179,11 +174,10 @@ export default function VisionSection() {
         <div className="flex flex-col gap-[25px]">
           <div className="max-w-4xl flex flex-col gap-4">
             <motion.span
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl text-gradient"
             >
@@ -191,11 +185,10 @@ export default function VisionSection() {
             </motion.span>
 
             <motion.div
-              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.7,
+                duration: 0.9,
               }}
               className="text-[#1E1E1E] text-lg leading-7 max-lg:text-base"
             >
@@ -210,11 +203,10 @@ export default function VisionSection() {
             </motion.div>
           </div>
           <motion.div
-            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.7,
+              duration: 0.9,
             }}
             className="py-1 grid grid-cols-4 gap-x-4"
           >
@@ -242,11 +234,10 @@ export default function VisionSection() {
           </motion.div>
 
           <motion.span
-            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.7,
+              duration: 0.9,
             }}
             className="mt-[11px] max-w-4xl text-[#717680] text-lg leading-7 max-lg:text-sm"
           >
