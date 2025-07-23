@@ -135,16 +135,18 @@ export default function CoreValueSection() {
                 duration: 1.1,
               }}
             >
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={selected ? selected.code : "empty"}
-                  initial={{ x: -50, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  exit={{ x: 10, opacity: 0 }}
-                  transition={{ duration: 0.4 }}
-                  className="relative h-fit"
-                >
-                  <img src={selected ? selected.img : ""} alt="" />
+              <AnimatePresence mode="sync">
+                <div className="relative h-fit">
+                  <motion.div
+                    key={selected ? selected.code : "empty"}
+                    initial={{ x: -50, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    exit={{ x: 10, opacity: 0 }}
+                    transition={{ duration: 0.4 }}
+                  >
+                    <img src={selected ? selected.img : ""} alt="" />
+                  </motion.div>
+
                   <motion.div
                     key={selected ? `${selected.code}_img` : "empty"}
                     initial={{ x: -20, opacity: 0 }}
@@ -158,10 +160,10 @@ export default function CoreValueSection() {
 
                   <motion.div
                     key={selected ? `${selected.code}_text` : "empty"}
-                    initial={{ y: 20, opacity: 0 }}
+                    initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.6 }}
                     className="w-full absolute bottom-[83px] left-[57px] max-xl:left-[40px] max-lg:left-[40px] max-xl:bottom-[65px] max-lg:bottom-[52px]"
                   >
                     <div className="flex flex-col gap-[38px] max-2xl:gap-[33px] max-xl:gap-6 max-lg:gap-[18px]">
@@ -179,7 +181,7 @@ export default function CoreValueSection() {
                       </span>
                     </div>
                   </motion.div>
-                </motion.div>
+                </div>
               </AnimatePresence>
             </motion.div>
           </div>
