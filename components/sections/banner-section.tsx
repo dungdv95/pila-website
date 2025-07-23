@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { useIsMobile } from "../hooks/use-mobile";
+import AnimationFactory from "../animation/factory";
 
 export default function BannerSection() {
   const isMobile = useIsMobile();
@@ -21,11 +22,12 @@ export default function BannerSection() {
                 }}
                 className="w-[620px] absolute top-0 left-[13%] max-[37rem]:left-[5%]"
               >
-                <img
+                {/* <img
                   src="/images/pila-banner.png"
                   className=" w-full object-cover "
                   alt=""
-                />
+                /> */}
+                <AnimationFactory />
               </motion.div>
             </div>
           </div>
@@ -133,11 +135,12 @@ export default function BannerSection() {
               className="absolute top-10 !w-[780px] max-2xl:!w-[650px] max-xl:!w-[550px] max-lg:!w-[460px]
             right-[-195px] max-2xl:right-[-100px] max-xl:right-[-190px]"
             >
-              <img
+              <AnimationFactory />
+              {/* <img
                 src="/images/pila-banner.png"
                 className=" w-full object-cover "
                 alt=""
-              />
+              /> */}
             </motion.div>
           </div>
         </div>
