@@ -40,6 +40,7 @@ export default function VisionSection() {
       <section id="vision" className="overflow-hidden bg-white">
         <div className="flex flex-col gap-4">
           <motion.span
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -51,6 +52,7 @@ export default function VisionSection() {
           </motion.span>
 
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -60,16 +62,17 @@ export default function VisionSection() {
           >
             PILA hướng tới trở thành nền tảng hạ tầng tin cậy cho kỷ nguyên số,
             xoay quanh 4 trụ cột dữ liệu đang dịch chuyển từ thế giới thực sang
-            thế giới số:
+            thế giới số:{" "}
             <span className="font-bold">
               People, Items, Locations, Activities (PILA)
-            </span>
+            </span>{" "}
             đòi hỏi một hệ sinh thái kết nối, quản trị và xác thực bảo mật, an
             toàn và phi tập trung
           </motion.div>
 
           <div className="mt-[18px] flex flex-col gap-4">
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -111,6 +114,7 @@ export default function VisionSection() {
               </div>
             </motion.div>
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -153,6 +157,7 @@ export default function VisionSection() {
             </motion.div>
           </div>
           <motion.span
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -172,8 +177,9 @@ export default function VisionSection() {
     <section id="vision" className=" bg-white">
       <div className="container mx-auto pb-[83px] px-[100px] max-2xl:px-4 max-xl:px-2">
         <div className="flex flex-col gap-[25px]">
-          <div className="max-w-4xl flex flex-col gap-4">
+          <div className="max-w-[920px] flex flex-col gap-4">
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -185,6 +191,7 @@ export default function VisionSection() {
             </motion.span>
 
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -203,6 +210,7 @@ export default function VisionSection() {
             </motion.div>
           </div>
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -234,12 +242,13 @@ export default function VisionSection() {
           </motion.div>
 
           <motion.span
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
               duration: 1.1,
             }}
-            className="mt-[11px] max-w-4xl text-[#717680] text-lg leading-7 max-lg:text-sm"
+            className="mt-[11px] max-w-[920px] text-[#717680] text-lg leading-7 max-lg:text-sm"
           >
             Ứng dụng công nghệ để kiến tạo một nền kinh tế số an toàn, minh bạch
             và bền vững, đồng hành cùng hành trình chuyển đổi số quốc gia trong

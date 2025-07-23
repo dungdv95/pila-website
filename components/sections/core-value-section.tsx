@@ -22,6 +22,8 @@ const listCore = [
       "Chúng tôi tiên phong ứng dụng công nghệ đột phá như Blockchain, Big Data và Phygital để tạo ra các giải pháp định danh và xác thực tiên tiến, góp phần giải quyết các vấn đề cốt lõi của nền kinh tế số.",
     img: "/images/core-renew.png",
     code: "innovative",
+    text1: "ĐỔI MỚI",
+    text2: "KHÔNG NGỪNG",
   },
   {
     id: 2,
@@ -31,6 +33,8 @@ const listCore = [
       "Chúng tôi phát triển hệ thống quản trị và xác thực dữ liệu đáng tin cậy, nơi thông tin có thể kiểm chứng, phục vụ việc ra quyết định hiệu quả và tăng cường kết nối số.",
     img: "/images/dlmb.png",
     code: "informative",
+    text1: "DỮ LIỆU",
+    text2: "MINH BẠCH",
   },
   {
     id: 3,
@@ -40,6 +44,8 @@ const listCore = [
       "Chúng tôi phát triển hệ thống quản trị và xác thực dữ liệu đáng tin cậy, nơi thông tin có thể kiểm chứng, phục vụ việc ra quyết định hiệu quả và tăng cường kết nối số.",
     img: "/images/adaptive.png",
     code: "adaptive",
+    text1: "LINH HOẠT",
+    text2: "& THÍCH ỨNG",
   },
   {
     id: 4,
@@ -49,6 +55,8 @@ const listCore = [
       "Chúng tôi đặt niềm tin số làm trọng tâm, đảm bảo bảo mật, quyền riêng tư và kiểm soát dữ liệu cho người dùng, đồng thời tuân thủ chặt chẽ quy định pháp luật trong mọi giải pháp công nghệ.",
     img: "/images/trust.png",
     code: "trust",
+    text1: "NIỀM TIN",
+    text2: "LÀ NỀN TẢNG",
   },
   {
     id: 5,
@@ -58,6 +66,8 @@ const listCore = [
       "Mỗi sản phẩm và dịch vụ của PILA không chỉ mang lại hiệu quả kinh tế mà còn hướng đến tạo tác động tích cực và bền vững cho xã hội, góp phần xây dựng một hệ sinh thái số công bằng và thịnh vượng.",
     img: "/images/impact.png",
     code: "impactful",
+    text1: "PHÁT TRIỂN",
+    text2: "BỀN VỮNG",
   },
 ];
 
@@ -74,6 +84,7 @@ export default function CoreValueSection() {
       <div className="container mx-auto py-16 px-[100px] max-2xl:px-4 max-xl:px-2">
         <div className="flex flex-col gap-[52px]">
           <motion.span
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -85,9 +96,10 @@ export default function CoreValueSection() {
           </motion.span>
 
           <div className="flex gap-[110px] max-2xl:gap-[80px] max-xl:gap-[60px] max-lg:gap-[20px]">
-            <div className="flex flex-col gap-2">
+            <div className="max-w-[52%] flex flex-col gap-2">
               {listCore.map((item, index) => (
                 <motion.div
+                  viewport={{ once: true }}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
@@ -116,6 +128,7 @@ export default function CoreValueSection() {
               ))}
             </div>
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -134,6 +147,22 @@ export default function CoreValueSection() {
                   <img src={selected ? selected.img : ""} alt="" />
                   <div className="absolute top-[45%] left-0 transform -translate-x-1/2 -translate-y-1/2">
                     <Icons.coreArrowIcon className="max-2xl:w-[100px] max-lg:w-[60px]" />
+                  </div>
+                  <div className="w-full absolute bottom-[83px] left-[57px] max-xl:left-[40px] max-lg:left-[40px] max-xl:bottom-[65px] max-lg:bottom-[52px]">
+                    <div className="flex flex-col gap-[38px] max-2xl:gap-[33px] max-xl:gap-6 max-lg:gap-[18px]">
+                      <span
+                        className="text-[#4278E4] text-[56px] font-black leading-[24px] max-2xl:text-[52px]
+                       max-xl:text-[46px] max-lg:text-[34px]"
+                      >
+                        {selected.text1}
+                      </span>
+                      <span
+                        className="text-[#4278E4] text-[56px] font-black leading-[24px] max-2xl:text-[52px]  
+                      max-xl:text-[46px] max-lg:text-[34px]"
+                      >
+                        {selected.text2}
+                      </span>
+                    </div>
                   </div>
                 </motion.div>
               </AnimatePresence>
@@ -174,6 +203,7 @@ function MobileCoreValue() {
     <section id="corevalue" className="px-5 pt-[26px]">
       <div className="flex flex-col">
         <motion.span
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -184,6 +214,7 @@ function MobileCoreValue() {
           Giá trị cốt lõi
         </motion.span>
         <motion.div
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -198,8 +229,18 @@ function MobileCoreValue() {
           >
             <CarouselContent>
               {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index} className="">
+                <CarouselItem key={index} className="relative">
                   <img src={listCore[index].img} />
+                  <div className="w-full absolute bottom-[13px] left-9">
+                    <div className="flex flex-col gap-3">
+                      <span className="text-[#4278E4] text-4xl font-black ">
+                        {listCore[index].text1}
+                      </span>
+                      <span className="text-[#4278E4] text-4xl font-black ">
+                        {listCore[index].text2}
+                      </span>
+                    </div>
+                  </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -223,11 +264,13 @@ function MobileCoreValue() {
           </div>
         </motion.div>
         <motion.div
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             duration: 1.1,
           }}
+          className="mt-[7px] min-h-[208px]"
         >
           <AnimatePresence mode="wait">
             <motion.div
@@ -236,7 +279,7 @@ function MobileCoreValue() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
               transition={{ duration: 0.4 }}
-              className="mt-[7px] py-6 px-4 border-l border-[#00B6FF] flex flex-col gap-4 bg-core"
+              className="py-6 px-4 border-l border-[#00B6FF] flex flex-col gap-4 bg-core"
             >
               <span className="text-[#414651] text-2xl leading-8 font-semibold">
                 {listCore[current - 1]?.title}

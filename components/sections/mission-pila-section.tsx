@@ -13,6 +13,7 @@ export default function MissionPilaSection() {
         className="relative mt-[77px] py-[30px] bg-mobile-mission"
       >
         <motion.div
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -32,6 +33,7 @@ export default function MissionPilaSection() {
         <div className="">
           <div className="px-5 mt-[525px] flex flex-col gap-[31px]">
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -44,6 +46,7 @@ export default function MissionPilaSection() {
 
             <div className="flex flex-col gap-6">
               <motion.span
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -56,6 +59,7 @@ export default function MissionPilaSection() {
                 thế giới số; từ bảo mật, minh bạch đến an toàn thông tin.
               </motion.span>
               <motion.span
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -67,6 +71,7 @@ export default function MissionPilaSection() {
                 tiên tiến như
               </motion.span>
               <motion.div
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -75,13 +80,14 @@ export default function MissionPilaSection() {
                 className="flex justify-center"
               >
                 <ul className="!list-disc list-inside custom-list text-[#202A3D] text-lg leading-7">
-                  <li className="mb-0.5">Blockchain </li>
-                  <li className="mb-0.5">Bảo vệ thông tin cá nhân</li>
-                  <li className="mb-0.5">Ngăn chặn các hành vi gian lận</li>
-                  <li className="mb-0.5">Tích hợp rộng rãi</li>
+                  <li className="mb-0.5">Blockchain</li>
+                  <li className="mb-0.5">Dữ liệu lớn</li>
+                  <li className="mb-0.5">Vật lý số</li>
+                  <li className="mb-0.5">Trí tuệ nhân tạo</li>
                 </ul>
               </motion.div>
               <motion.span
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -107,6 +113,7 @@ export default function MissionPilaSection() {
         <div className="flex items-center">
           <div className="w-1/2 flex flex-col gap-[31px] border-l border-gradient pl-8 max-xl:gap-6 max-lg:gap-4">
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -119,6 +126,7 @@ export default function MissionPilaSection() {
 
             <div className="flex flex-col gap-6 max-xl:gap-4">
               <motion.span
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -132,6 +140,7 @@ export default function MissionPilaSection() {
               </motion.span>
 
               <motion.span
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -144,6 +153,7 @@ export default function MissionPilaSection() {
               </motion.span>
 
               <motion.ul
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -151,13 +161,14 @@ export default function MissionPilaSection() {
                 }}
                 className="!list-disc list-inside custom-list text-[#202A3D] text-lg leading-7 max-lg:text-base"
               >
-                <li className="mb-1 ">Blockchain </li>
-                <li className="mb-1 ">Bảo vệ thông tin cá nhân</li>
-                <li className="mb-1 ">Ngăn chặn các hành vi gian lận</li>
-                <li className="mb-1 ">Tích hợp rộng rãi</li>
+                <li className="mb-1 ">Blockchain</li>
+                <li className="mb-1 ">Dữ liệu lớn</li>
+                <li className="mb-1 ">Vật lý số</li>
+                <li className="mb-1 ">Trí tuệ nhân tạo</li>
               </motion.ul>
 
               <motion.span
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -174,6 +185,7 @@ export default function MissionPilaSection() {
           </div>
           <div className="relative flex justify-center items-center">
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{

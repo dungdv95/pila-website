@@ -15,6 +15,7 @@ export default function Page() {
   return (
     <>
       <motion.div
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -26,6 +27,7 @@ export default function Page() {
 
       <VisionSection />
       <motion.div
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -40,6 +42,7 @@ export default function Page() {
       <BuildingSection />
       <PartnerSection />
       <motion.div
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{

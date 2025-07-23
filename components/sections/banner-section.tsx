@@ -13,6 +13,7 @@ export default function BannerSection() {
           <div className=" pt-[116px] pb-[170px] bg-banner mobile-polygon">
             <div className="relative h-[427px] flex justify-center items-center">
               <motion.div
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -35,6 +36,7 @@ export default function BannerSection() {
         >
           <div className="flex flex-col gap-3">
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -46,6 +48,7 @@ export default function BannerSection() {
             </motion.span>
 
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -57,6 +60,7 @@ export default function BannerSection() {
             </motion.span>
 
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -76,11 +80,12 @@ export default function BannerSection() {
 
   return (
     <section id="banner" className="bg-linear-to-r bg-banner custom-polygon">
-      <div className=" pt-[146px] pb-[325px] max-2xl:pb-[260px] max-xl:pb-[180px] max-lg:pb-[120px]">
+      <div className="pt-[146px] pb-[325px] max-2xl:pb-[260px] max-xl:pb-[180px] max-lg:pb-[120px]">
         <div className=" container mx-auto flex gap-[80px] px-[100px] max-2xl:px-4 max-xl:px-2">
-          <div className="mt-[100px] min-w-[650px] flex flex-col gap-10 max-lg:gap-5">
+          <div className="mt-[100px] min-w-[634px] flex flex-col gap-10 max-lg:gap-5">
             <div className="flex flex-col gap-3 max-lg:gap-1">
               <motion.span
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -92,6 +97,7 @@ export default function BannerSection() {
               </motion.span>
 
               <motion.span
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -103,6 +109,7 @@ export default function BannerSection() {
               </motion.span>
             </div>
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -117,6 +124,7 @@ export default function BannerSection() {
           </div>
           <div className="min-h-fit w-full relative flex justify-center">
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{

@@ -11,6 +11,7 @@ export default function BuildingSection() {
     return (
       <section id="product" className="px-5 mt-[96px] flex flex-col">
         <motion.span
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -25,6 +26,7 @@ export default function BuildingSection() {
           thế giới số
         </motion.span>
         <motion.span
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -37,6 +39,7 @@ export default function BuildingSection() {
         </motion.span>
 
         <motion.div
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -53,6 +56,7 @@ export default function BuildingSection() {
 
         <div className="mt-8 flex flex-col gap-4">
           <motion.span
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -63,6 +67,7 @@ export default function BuildingSection() {
             NDAChain - Nền tảng Blockchain quốc gia
           </motion.span>
           <motion.span
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -78,6 +83,7 @@ export default function BuildingSection() {
             người sử dụng
           </motion.span>
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -93,6 +99,7 @@ export default function BuildingSection() {
             </span>
           </motion.div>
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -106,6 +113,7 @@ export default function BuildingSection() {
             <span className="text-sm leading-5">Xác thực dữ liệu</span>
           </motion.div>
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -121,6 +129,7 @@ export default function BuildingSection() {
             </span>
           </motion.div>
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -136,6 +145,7 @@ export default function BuildingSection() {
         </div>
         <div className="mt-[70px] flex flex-col gap-10">
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -152,6 +162,7 @@ export default function BuildingSection() {
 
           <div className="mt-1 flex flex-col gap-6">
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -163,6 +174,7 @@ export default function BuildingSection() {
             </motion.span>
 
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -178,6 +190,7 @@ export default function BuildingSection() {
           </div>
           <div className="flex flex-col gap-6">
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -193,6 +206,7 @@ export default function BuildingSection() {
               </span>
             </motion.div>
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -208,6 +222,7 @@ export default function BuildingSection() {
               </span>
             </motion.div>
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -222,6 +237,7 @@ export default function BuildingSection() {
             </motion.div>
 
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -241,6 +257,7 @@ export default function BuildingSection() {
 
         <div className="mt-[60px] flex flex-col gap-8">
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -257,6 +274,7 @@ export default function BuildingSection() {
 
           <div className="mt-7 flex flex-col gap-6">
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -267,6 +285,7 @@ export default function BuildingSection() {
               NDA SDK - Bộ công cụ giải pháp tích hợp đa nền tảng
             </motion.span>
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -285,6 +304,7 @@ export default function BuildingSection() {
           </div>
           <div className="flex flex-col gap-6">
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -300,6 +320,7 @@ export default function BuildingSection() {
               </span>
             </motion.div>
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -315,6 +336,7 @@ export default function BuildingSection() {
               </span>
             </motion.div>
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -340,6 +362,7 @@ export default function BuildingSection() {
       <div className="container mx-auto px-[200px] max-2xl:px-20 max-xl:px-6 flex flex-col gap-11">
         <div className="flex flex-col gap-4 items-center">
           <motion.span
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -350,6 +373,7 @@ export default function BuildingSection() {
             Xây dựng hạ tầng niềm tin cho thế giới số
           </motion.span>
           <motion.span
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -363,6 +387,7 @@ export default function BuildingSection() {
         <div className="relative flex items-center gap-[30px] max-xl:gap-3 max-lg:gap-2">
           <div className="w-1/2 flex flex-col gap-6 max-xl:gap-3 max-lg:gap-2">
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -373,6 +398,7 @@ export default function BuildingSection() {
               NDAChain - Nền tảng Blockchain quốc gia
             </motion.span>
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -390,6 +416,7 @@ export default function BuildingSection() {
 
             <div className="mt-[11px] flex flex-col gap-6 max-xl:gap-4 max-lg:gap-3">
               <motion.div
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -415,6 +442,7 @@ export default function BuildingSection() {
                 </div>
               </motion.div>
               <motion.div
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -442,6 +470,7 @@ export default function BuildingSection() {
             </div>
           </div>
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -457,6 +486,7 @@ export default function BuildingSection() {
             />
           </motion.div>
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -473,6 +503,7 @@ export default function BuildingSection() {
         </div>
         <div className="flex items-center gap-12 max-xl:gap-8 max-lg:gap-6">
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -490,6 +521,7 @@ export default function BuildingSection() {
 
           <div className="w-1/2 flex flex-col gap-6 max-lg:gap-3">
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -501,6 +533,7 @@ export default function BuildingSection() {
             </motion.span>
 
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -515,6 +548,7 @@ export default function BuildingSection() {
             </motion.span>
 
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -541,6 +575,7 @@ export default function BuildingSection() {
             </motion.div>
 
             <motion.div
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -570,6 +605,7 @@ export default function BuildingSection() {
         <div className="relative flex items-center gap-[30px] max-xl:gap-3 max-lg:gap-2">
           <div className="w-1/2 flex flex-col gap-6 max-xl:gap-3 max-lg:gap-2">
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -580,6 +616,7 @@ export default function BuildingSection() {
               NDA SDK - Bộ công cụ giải pháp tích hợp đa nền tảng
             </motion.span>
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -598,6 +635,7 @@ export default function BuildingSection() {
 
             <div className="mt-[11px] flex flex-col gap-6 max-xl:gap-4 max-lg:gap-3">
               <motion.div
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -623,6 +661,7 @@ export default function BuildingSection() {
                 </div>
               </motion.div>
               <motion.div
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -642,6 +681,7 @@ export default function BuildingSection() {
             </div>
           </div>
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

@@ -108,6 +108,7 @@ export default function PartnerSection() {
         <div className="relative flex flex-col gap-[100px]">
           <div className="flex flex-col gap-4 items-center">
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -119,6 +120,7 @@ export default function PartnerSection() {
             </motion.span>
 
             <motion.span
+              viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -138,6 +140,7 @@ export default function PartnerSection() {
           <div className="grid grid-cols-3 gap-[31px] max-xl:gap-4 max-lg:grid-cols-2 max-lg:gap-5">
             {listPartner.map((item) => (
               <motion.div
+                viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -164,6 +167,7 @@ export default function PartnerSection() {
             ))}
           </div>
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -208,6 +212,7 @@ function MobilePartner() {
     <section id="partner" className="mt-[68px] flex flex-col gap-12">
       <div className="px-5 flex flex-col gap-6">
         <motion.span
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -218,6 +223,7 @@ function MobilePartner() {
           Đối tác chiến lược
         </motion.span>
         <motion.span
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -242,6 +248,7 @@ function MobilePartner() {
                 <CarouselItem key={index} className="">
                   <div className="flex flex-col gap-[29px]">
                     <motion.div
+                      viewport={{ once: true }}
                       initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
@@ -265,6 +272,7 @@ function MobilePartner() {
                       </span>
                     </motion.div>
                     <motion.div
+                      viewport={{ once: true }}
                       initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
