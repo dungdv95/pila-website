@@ -135,7 +135,7 @@ export default function CoreValueSection() {
                 duration: 1.1,
               }}
             >
-              <AnimatePresence mode="sync">
+              <AnimatePresence mode="wait">
                 <div className="relative h-fit">
                   <motion.div
                     key={selected ? selected.code : "empty"}
