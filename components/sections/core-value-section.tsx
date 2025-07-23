@@ -145,10 +145,25 @@ export default function CoreValueSection() {
                   className="relative h-fit"
                 >
                   <img src={selected ? selected.img : ""} alt="" />
-                  <div className="absolute top-[45%] left-0 transform -translate-x-1/2 -translate-y-1/2">
+                  <motion.div
+                    key={selected ? `${selected.code}_img` : "empty"}
+                    initial={{ x: -20, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    exit={{ x: 0, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="absolute top-[45%] left-0 transform -translate-x-1/2 -translate-y-1/2"
+                  >
                     <Icons.coreArrowIcon className="max-2xl:w-[100px] max-lg:w-[60px]" />
-                  </div>
-                  <div className="w-full absolute bottom-[83px] left-[57px] max-xl:left-[40px] max-lg:left-[40px] max-xl:bottom-[65px] max-lg:bottom-[52px]">
+                  </motion.div>
+
+                  <motion.div
+                    key={selected ? `${selected.code}_text` : "empty"}
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: 0, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="w-full absolute bottom-[83px] left-[57px] max-xl:left-[40px] max-lg:left-[40px] max-xl:bottom-[65px] max-lg:bottom-[52px]"
+                  >
                     <div className="flex flex-col gap-[38px] max-2xl:gap-[33px] max-xl:gap-6 max-lg:gap-[18px]">
                       <span
                         className="text-[#4278E4] text-[56px] font-black leading-[24px] max-2xl:text-[52px]
@@ -163,7 +178,7 @@ export default function CoreValueSection() {
                         {selected.text2}
                       </span>
                     </div>
-                  </div>
+                  </motion.div>
                 </motion.div>
               </AnimatePresence>
             </motion.div>
