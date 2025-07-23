@@ -43,7 +43,7 @@ export default function VisionSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="px-5 text-center font-bold text-[36px] leading-11 tracking-[-0.72px] text-gradient-vision"
           >
@@ -54,7 +54,7 @@ export default function VisionSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="px-5 text-center text-[#1E1E1E] text-[18px] leading-7"
           >
@@ -73,7 +73,7 @@ export default function VisionSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="flex"
             >
@@ -114,7 +114,7 @@ export default function VisionSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="flex"
             >
@@ -156,7 +156,7 @@ export default function VisionSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="px-5 mt-[18px] text-center text-[#717680] text-lg leading-7"
           >
@@ -177,7 +177,7 @@ export default function VisionSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl text-gradient"
             >
@@ -188,7 +188,7 @@ export default function VisionSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#1E1E1E] text-lg leading-7 max-lg:text-base"
             >
@@ -206,7 +206,7 @@ export default function VisionSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="py-1 grid grid-cols-4 gap-x-4"
           >
@@ -237,7 +237,7 @@ export default function VisionSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="mt-[11px] max-w-4xl text-[#717680] text-lg leading-7 max-lg:text-sm"
           >

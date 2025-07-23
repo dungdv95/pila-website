@@ -70,14 +70,14 @@ export default function CoreValueSection() {
   }
 
   return (
-    <section id="product" className="bg-white">
+    <section id="corevalue" className="bg-white">
       <div className="container mx-auto py-16 px-[100px] max-2xl:px-4 max-xl:px-2">
         <div className="flex flex-col gap-[52px]">
           <motion.span
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="text-center text-[#181818] font-bold text-[36px] leading-11 tracking-[-0.72px] max-lg:text-2xl"
           >
@@ -91,7 +91,7 @@ export default function CoreValueSection() {
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    duration: 0.9,
+                    duration: 1.1,
                   }}
                   className={cn(
                     "py-6 px-4 flex gap-8 items-center cursor-pointer",
@@ -119,7 +119,7 @@ export default function CoreValueSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
             >
               <AnimatePresence mode="wait">
@@ -171,13 +171,13 @@ function MobileCoreValue() {
   }, [api]);
 
   return (
-    <section id="product" className="px-5 pt-[26px]">
+    <section id="corevalue" className="px-5 pt-[26px]">
       <div className="flex flex-col">
         <motion.span
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.9,
+            duration: 1.1,
           }}
           className="text-center text-[#181818] text-4xl leading-11 font-bold tracking-[-0.72px]"
         >
@@ -187,7 +187,7 @@ function MobileCoreValue() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.9,
+            duration: 1.1,
           }}
           className="mt-[13px] flex flex-col gap-[18px] items-center"
         >
@@ -226,7 +226,7 @@ function MobileCoreValue() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.9,
+            duration: 1.1,
           }}
         >
           <AnimatePresence mode="wait">

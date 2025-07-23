@@ -9,12 +9,12 @@ export default function BuildingSection() {
 
   if (isMobile) {
     return (
-      <section id="technology" className="px-5 mt-[96px] flex flex-col">
+      <section id="product" className="px-5 mt-[96px] flex flex-col">
         <motion.span
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.9,
+            duration: 1.1,
           }}
           className="text-center text-[#181818] text-4xl leading-11 tracking-[-0.72px] font-bold"
         >
@@ -28,7 +28,7 @@ export default function BuildingSection() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.9,
+            duration: 1.1,
           }}
           className="mt-6 text-center text-[#202A3D] text-lg leading-7"
         >
@@ -40,7 +40,7 @@ export default function BuildingSection() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.9,
+            duration: 1.1,
           }}
           className="py-[18px] px-4 flex justify-center items-center"
         >
@@ -56,7 +56,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="text-[#181818] text-2xl leading-8 font-bold"
           >
@@ -66,7 +66,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="mt-2 text-[#181818] text-sm leading-6"
           >
@@ -81,7 +81,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="mt-2 flex gap-3 items-center"
           >
@@ -96,7 +96,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="mt-2 flex gap-3 items-center"
           >
@@ -109,7 +109,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="mt-2 flex gap-3 items-center"
           >
@@ -124,7 +124,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="mt-2 flex gap-3 items-center"
           >
@@ -139,7 +139,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="flex justify-center items-center"
           >
@@ -155,7 +155,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#181818] text-2xl leading-8 font-bold"
             >
@@ -166,7 +166,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="mt-2 text-[#181818] text-sm leading-6"
             >
@@ -181,7 +181,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="flex gap-3 items-center"
             >
@@ -196,7 +196,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="flex gap-3 items-center"
             >
@@ -211,7 +211,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="flex gap-3 items-center"
             >
@@ -225,7 +225,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="flex gap-3 items-center"
             >
@@ -244,7 +244,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="flex justify-center items-center"
           >
@@ -260,7 +260,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#181818] text-2xl leading-8 font-bold"
             >
@@ -270,7 +270,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="mt-2 text-[#181818] text-sm leading-6"
             >
@@ -288,7 +288,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="flex gap-3 items-center"
             >
@@ -303,7 +303,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="flex gap-3 items-center"
             >
@@ -318,7 +318,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="flex gap-3 items-center"
             >
@@ -336,14 +336,14 @@ export default function BuildingSection() {
   }
 
   return (
-    <section id="technology" className="py-16 relative">
+    <section id="product" className="py-16 relative">
       <div className="container mx-auto px-[200px] max-2xl:px-20 max-xl:px-6 flex flex-col gap-11">
         <div className="flex flex-col gap-4 items-center">
           <motion.span
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="text-[#181818] font-bold text-[36px] leading-11 tracking-[-0.72px] max-lg:text-2xl"
           >
@@ -353,7 +353,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="text-[#202A3D] text-lg leading-7 max-lg:text-base"
           >
@@ -366,7 +366,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#181818] text-2xl leading-8 font-bold max-xl:text-xl max-lg:text-[17px] max-lg:leading-6"
             >
@@ -376,7 +376,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#181818] text-base leading-6 max-xl:text-sm max-lg:text-xs"
             >
@@ -393,7 +393,7 @@ export default function BuildingSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="grid grid-cols-2 gap-x-6 max-lg:gap-[10px]"
               >
@@ -418,7 +418,7 @@ export default function BuildingSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="grid grid-cols-2 gap-x-6 max-lg:gap-[10px]"
               >
@@ -445,7 +445,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className=" flex justify-center items-center w-[700px] max-2xl:w-[550px]
           max-xl:w-[600px] max-lg:w-[430px]"
@@ -460,7 +460,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="absolute bottom-[-30%] left-[-38%] w-[1300px] max-2xl:left-[-40%] max-2xl:bottom-[-55%] max-xl:w-[1100px] max-xl:left-[-45%] max-xl:bottom-[-37%] 
           max-lg:w-[950px] max-lg:left-[-57%] max-lg:bottom-[-48%]"
@@ -476,7 +476,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="flex justify-center items-center w-[650px] max-2xl:w-[550px]
           max-xl:w-[500px] max-lg:w-[430px]"
@@ -493,7 +493,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#181818] text-2xl leading-8 font-bold max-xl:text-xl max-lg:text-[17px] max-lg:leading-6"
             >
@@ -504,7 +504,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#181818] text-base leading-6 max-xl:text-sm max-lg:text-xs"
             >
@@ -518,7 +518,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="mt-4 grid grid-cols-2 gap-x-6 max-lg:gap-[10px]"
             >
@@ -544,7 +544,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="grid grid-cols-2 gap-x-6 max-lg:gap-[10px]"
             >
@@ -573,7 +573,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#181818] text-2xl leading-8 font-bold max-xl:text-xl max-lg:text-[17px] max-lg:leading-6"
             >
@@ -583,7 +583,7 @@ export default function BuildingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#181818] text-base leading-6 max-xl:text-sm max-lg:text-xs"
             >
@@ -601,7 +601,7 @@ export default function BuildingSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="grid grid-cols-2 gap-x-6 max-lg:gap-[10px]"
               >
@@ -626,7 +626,7 @@ export default function BuildingSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="grid grid-cols-2 gap-x-6 max-lg:gap-[10px]"
               >
@@ -645,7 +645,7 @@ export default function BuildingSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="flex justify-center items-center w-[670px] max-2xl:w-[550px]
           max-xl:w-[560px] max-lg:w-[380px]"

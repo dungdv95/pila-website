@@ -16,7 +16,7 @@ export default function BannerSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="w-[620px] absolute top-0 left-[13%] max-[37rem]:left-[5%]"
               >
@@ -38,7 +38,7 @@ export default function BannerSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-center font-bold text-[36px] leading-11 tracking-[-0.72px] text-gradient"
             >
@@ -49,7 +49,7 @@ export default function BannerSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-center font-bold text-[36px] leading-11 tracking-[-0.72px] text-gradient"
             >
@@ -60,7 +60,7 @@ export default function BannerSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="mt-7 text-center text-[#181818] text-lg leading-7"
             >
@@ -84,7 +84,7 @@ export default function BannerSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl text-gradient"
               >
@@ -95,7 +95,7 @@ export default function BannerSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="font-bold text-[36px] leading-11 tracking-[-0.02em] max-lg:text-2xl text-gradient"
               >
@@ -106,7 +106,7 @@ export default function BannerSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#181818] text-lg leading-7 max-w-2xl max-lg:max-w-md max-lg:text-base"
             >
@@ -120,7 +120,7 @@ export default function BannerSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="absolute top-10 !w-[780px] max-2xl:!w-[650px] max-xl:!w-[550px] max-lg:!w-[460px]
             right-[-195px] max-2xl:right-[-100px] max-xl:right-[-190px]"

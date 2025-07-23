@@ -24,27 +24,33 @@ const listNav = [
   },
   {
     id: 2,
+    name: "Sứ mệnh",
+    href: "#mission",
+    idSection: "mission",
+  },
+  {
+    id: 3,
+    name: "Giá trị cốt lõi",
+    href: "#corevalue",
+    idSection: "corevalue",
+  },
+  {
+    id: 4,
     name: "Ứng dụng",
     href: "#application",
     idSection: "application",
   },
   {
-    id: 3,
+    id: 5,
     name: "Sản phẩm",
     href: "#product",
     idSection: "product",
   },
   {
-    id: 4,
+    id: 6,
     name: "Đối tác",
     href: "#partner",
     idSection: "partner",
-  },
-  {
-    id: 5,
-    name: "Công nghệ",
-    href: "#technology",
-    idSection: "technology",
   },
 ];
 
@@ -61,7 +67,7 @@ export default function HeaderSection() {
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.9,
+            duration: 1.1,
           }}
           className="py-6 px-4 bg-white/80"
         >
@@ -184,7 +190,7 @@ export default function HeaderSection() {
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.9,
+            duration: 1.1,
           }}
           className="px-10 py-4 flex h-[74px] items-center justify-between bg-white rounded-full"
         >

@@ -9,14 +9,14 @@ export default function MissionPilaSection() {
   if (isMobile) {
     return (
       <section
-        id="application"
+        id="mission"
         className="relative mt-[77px] py-[30px] bg-mobile-mission"
       >
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.9,
+            duration: 1.1,
           }}
           className="absolute top-[-130px] w-[1200px] left-[-17%] max-[45rem]:left-[-22%] max-[40rem]:left-[-31%] max-[35rem]:left-[-42%]
         max-[31rem]:left-[-54%] max-[28rem]:left-[-65%] max-[26.9rem]:left-[-69%] max-[26rem]:left-[-74%] max-[25rem]:left-[-82%] max-[23.75rem]:left-[-87%]
@@ -35,7 +35,7 @@ export default function MissionPilaSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-center font-bold text-[36px] leading-[44px] tracking-[-0.02em] text-gradient-vision"
             >
@@ -47,7 +47,7 @@ export default function MissionPilaSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="text-center text-[#202A3D] text-lg leading-7"
               >
@@ -59,7 +59,7 @@ export default function MissionPilaSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="text-center text-[#202A3D] text-lg leading-7"
               >
@@ -70,7 +70,7 @@ export default function MissionPilaSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="flex justify-center"
               >
@@ -85,7 +85,7 @@ export default function MissionPilaSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="text-center text-[#202A3D] text-lg leading-7"
               >
@@ -102,10 +102,7 @@ export default function MissionPilaSection() {
   }
 
   return (
-    <section
-      id="application"
-      className="relative py-24 bg-mission max-xl:py-14"
-    >
+    <section id="mission" className="relative py-24 bg-mission max-xl:py-14">
       <div className="container mx-auto px-[100px] max-2xl:px-4 max-xl:px-2">
         <div className="flex items-center">
           <div className="w-1/2 flex flex-col gap-[31px] border-l border-gradient pl-8 max-xl:gap-6 max-lg:gap-4">
@@ -113,7 +110,7 @@ export default function MissionPilaSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="font-bold text-[36px] leading-[44px] tracking-[-0.02em] bg-gradient-to-r from-[#181818] via-[#7E7E7E] to-[#7E7E7E] text-transparent bg-clip-text max-lg:text-xl"
             >
@@ -125,7 +122,7 @@ export default function MissionPilaSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="text-[#202A3D] text-lg leading-7 max-lg:text-base"
               >
@@ -138,7 +135,7 @@ export default function MissionPilaSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="text-[#202A3D] text-lg leading-7 max-lg:text-base"
               >
@@ -150,7 +147,7 @@ export default function MissionPilaSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="!list-disc list-inside custom-list text-[#202A3D] text-lg leading-7 max-lg:text-base"
               >
@@ -164,7 +161,7 @@ export default function MissionPilaSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="text-[#202A3D] text-lg leading-7 max-lg:text-base"
               >
@@ -180,7 +177,7 @@ export default function MissionPilaSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="absolute w-[1050px] top-[-380px] left-[-100px]
               max-2xl:w-[900px] max-2xl:top-[-310px] max-2xl:left-[-70px]

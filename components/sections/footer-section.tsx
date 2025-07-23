@@ -15,7 +15,7 @@ export default function FooterSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="w-[220px]"
           >
@@ -28,7 +28,7 @@ export default function FooterSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#1E1E1E] text-2xl leading-8 font-semibold"
             >
@@ -38,7 +38,7 @@ export default function FooterSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#1E1E1E] text-lg leading-7"
             >
@@ -54,7 +54,7 @@ export default function FooterSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#0D152E] text-base font-medium tracking-[-0.6px]"
             >
@@ -64,7 +64,7 @@ export default function FooterSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#0D152E] text-base font-medium tracking-[-0.6px]"
             >
@@ -74,7 +74,7 @@ export default function FooterSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#0D152E] text-base font-medium tracking-[-0.6px]"
             >
@@ -84,7 +84,7 @@ export default function FooterSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#0D152E] text-base font-medium tracking-[-0.6px]"
             >
@@ -94,7 +94,7 @@ export default function FooterSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#0D152E] text-base font-medium tracking-[-0.6px]"
             >
@@ -107,7 +107,7 @@ export default function FooterSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#0D152E] text-2xl leading-8 font-semibold"
             >
@@ -117,7 +117,7 @@ export default function FooterSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="mt-1.5 text-[#0D152E] text-base leading-6"
             >
@@ -127,7 +127,7 @@ export default function FooterSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="text-[#0D152E] text-base leading-6"
             >
@@ -149,7 +149,7 @@ export default function FooterSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="w-[300px] max-xl:w-[200px]"
               >
@@ -163,7 +163,7 @@ export default function FooterSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="col-span-2 flex items-center gap-[72px] max-2xl:gap-[50px] max-xl:gap-[30px]"
             >
@@ -190,7 +190,7 @@ export default function FooterSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="text-[#0D152E] text-2xl leading-8 font-semibold"
               >
@@ -200,7 +200,7 @@ export default function FooterSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.1,
                 }}
                 className="text-[#1E1E1E] text-lg leading-7"
               >
@@ -216,7 +216,7 @@ export default function FooterSection() {
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    duration: 0.9,
+                    duration: 1.1,
                   }}
                   className="mt-1.5 text-[#0D152E] text-2xl leading-8 font-semibold"
                 >
@@ -227,7 +227,7 @@ export default function FooterSection() {
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    duration: 0.9,
+                    duration: 1.1,
                   }}
                   className="text-[#1E1E1E] text-lg leading-7"
                 >
@@ -238,7 +238,7 @@ export default function FooterSection() {
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    duration: 0.9,
+                    duration: 1.1,
                   }}
                   className="text-[#1E1E1E] text-lg leading-7"
                 >
@@ -250,7 +250,7 @@ export default function FooterSection() {
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    duration: 0.9,
+                    duration: 1.1,
                   }}
                   className="mt-1.5 text-[#0D152E] text-2xl leading-8 font-semibold"
                 >
@@ -261,7 +261,7 @@ export default function FooterSection() {
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    duration: 0.9,
+                    duration: 1.1,
                   }}
                   className="text-[#1E1E1E] text-lg leading-7"
                 >
@@ -271,7 +271,7 @@ export default function FooterSection() {
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    duration: 0.9,
+                    duration: 1.1,
                   }}
                   className="text-[#1E1E1E] text-lg leading-7"
                 >
@@ -281,7 +281,7 @@ export default function FooterSection() {
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    duration: 0.9,
+                    duration: 1.1,
                   }}
                   className="text-[#1E1E1E] text-lg leading-7"
                 >

@@ -64,14 +64,14 @@ export default function InfrastructureSection() {
   }
 
   return (
-    <section className="pt-16 relative">
+    <section id="application" className="pt-16 relative">
       <div className="flex flex-col gap-[76px]">
         <div className="flex flex-col gap-4 items-center">
           <motion.span
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="text-[#181818] text-4xl leading-11 font-bold tracking-[-0.72px] max-lg:text-2xl"
           >
@@ -81,7 +81,7 @@ export default function InfrastructureSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="text-[#202A3D] text-lg leading-7 max-lg:text-base"
           >
@@ -92,7 +92,7 @@ export default function InfrastructureSection() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.9,
+            duration: 1.1,
           }}
           className="bg-infra"
         >
@@ -101,7 +101,7 @@ export default function InfrastructureSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="relative"
             >
@@ -152,7 +152,7 @@ export default function InfrastructureSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.9,
+                duration: 1.1,
               }}
               className="min-h-fit w-full relative flex justify-center"
             >
@@ -202,14 +202,14 @@ function MobileInfra() {
   }, [api]);
 
   return (
-    <section className="mt-[90px] relative">
+    <section id="application" className="mt-[90px] relative">
       <div className="flex flex-col">
         <div className="px-5 flex flex-col gap-6">
           <motion.span
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="text-center text-[#181818] text-4xl leading-11 font-bold"
           >
@@ -221,7 +221,7 @@ function MobileInfra() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="text-center text-[#202A3D] text-lg leading-7"
           >
@@ -235,7 +235,7 @@ function MobileInfra() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 1.1,
             }}
             className="absolute w-[484px] top-[70px]"
           >
@@ -250,7 +250,7 @@ function MobileInfra() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.9,
+            duration: 1.1,
           }}
           className="mt-[418px] px-5 flex flex-col gap-[17px] items-center"
         >
