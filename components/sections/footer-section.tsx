@@ -260,8 +260,8 @@ export default function FooterSection() {
     <section className="mt-8 bg-footer">
       <div className="container mx-auto px-[100px] max-2xl:px-4 max-xl:px-2 py-[60px]">
         <div className="flex flex-col gap-[37px]">
-          <div className="grid grid-cols-3 gap-[60px]">
-            <div className="col-span-1">
+          <div className="flex gap-[60px] items-center">
+            <div className="w-[35%] max-lg:w-[33%]">
               <motion.div
                 viewport={{ once: true }}
                 initial={{ opacity: 0, y: 40 }}
@@ -293,7 +293,7 @@ export default function FooterSection() {
               transition={{
                 duration: 1.1,
               }}
-              className="col-span-2 flex items-center gap-[72px] max-2xl:gap-[50px] max-xl:gap-[30px]"
+              className="flex items-center gap-[72px] max-2xl:gap-[50px] max-xl:gap-[30px] max-lg:gap-2"
             >
               <span
                 onClick={(event) => {
@@ -504,18 +504,20 @@ export default function FooterSection() {
                 </motion.span>
               </div>
               <div className="w-[37%] flex flex-col gap-[30px] ">
-                <motion.span
+                <motion.a
                   viewport={{ once: true }}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
                     duration: 1.1,
                   }}
+                  href="https://ndachain.vn/"
                   className="text-[#1E1E1E] text-lg leading-7"
+                  target="_blank"
                 >
                   NDAChain - Nền tảng blockchain quốc gia
-                </motion.span>
-                <motion.span
+                </motion.a>
+                <motion.a
                   viewport={{ once: true }}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -523,10 +525,12 @@ export default function FooterSection() {
                     duration: 1.1,
                   }}
                   className="text-[#1E1E1E] text-lg leading-7"
+                  href="https://www.ndatrace.vn/vn"
+                  target="_blank"
                 >
                   NDATrace - Nền tảng truy xuất xác thực nguồn gốc
-                </motion.span>
-                <motion.span
+                </motion.a>
+                <motion.a
                   viewport={{ once: true }}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -534,9 +538,11 @@ export default function FooterSection() {
                     duration: 1.1,
                   }}
                   className="text-[#1E1E1E] text-lg leading-7"
+                  href="https://www.ndakey.vn/"
+                  target="_blank"
                 >
                   NDAKey - Ứng dụng định danh phi tập trung
-                </motion.span>
+                </motion.a>
               </div>
             </div>
           </div>

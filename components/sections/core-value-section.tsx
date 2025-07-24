@@ -41,7 +41,7 @@ const listCore = [
     icon: <Icons.adaptiveIcon />,
     title: "Adaptive - Linh hoạt và thích ứng",
     description:
-      "Chúng tôi phát triển hệ thống quản trị và xác thực dữ liệu đáng tin cậy, nơi thông tin có thể kiểm chứng, phục vụ việc ra quyết định hiệu quả và tăng cường kết nối số.",
+      "PILA xây dựng các nền tảng mở, liên thông, dễ tích hợp, sẵn sàng thích ứng với sự thay đổi nhanh chóng của công nghệ, nhu cầu thị trường và khung pháp lý.",
     img: "/images/adaptive.png",
     code: "adaptive",
     text1: "LINH HOẠT",
@@ -152,7 +152,7 @@ export default function CoreValueSection() {
                     initial={{ x: -20, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ delay: 0.5, duration: 0.3 }}
                     className="absolute top-[45%] left-0 transform -translate-x-1/2 -translate-y-1/2"
                   >
                     <Icons.coreArrowIcon className="max-2xl:w-[100px] max-lg:w-[60px]" />
@@ -163,7 +163,7 @@ export default function CoreValueSection() {
                     initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 0, opacity: 0 }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ delay: 0.5, duration: 0.5 }}
                     className="w-full absolute bottom-[83px] left-[57px] max-xl:left-[40px] max-lg:left-[40px] max-xl:bottom-[65px] max-lg:bottom-[52px]"
                   >
                     <div className="flex flex-col gap-[38px] max-2xl:gap-[33px] max-xl:gap-6 max-lg:gap-[18px]">
