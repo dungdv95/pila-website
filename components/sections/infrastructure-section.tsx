@@ -76,7 +76,7 @@ export default function InfrastructureSection() {
             }}
             className="text-[#181818] text-4xl leading-11 font-bold tracking-[-0.72px] max-lg:text-2xl"
           >
-            Kiến thiết hạ tầng Định danh - xác thực
+            Kiến thiết hạ tầng Định danh - Xác thực
           </motion.span>
           <motion.span
             viewport={{ once: true }}
@@ -90,6 +90,7 @@ export default function InfrastructureSection() {
             Xây dựng Hạ tầng tin cậy - Phát triển Kinh tế số bền vững
           </motion.span>
         </div>
+
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}

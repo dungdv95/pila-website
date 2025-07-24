@@ -84,7 +84,7 @@ export default function BannerSection() {
 
   return (
     <section id="banner" className="bg-linear-to-r bg-banner custom-polygon">
-      <div className="pt-[146px] pb-[325px] max-2xl:pb-[260px] max-xl:pb-[180px] max-lg:pb-[120px]">
+      <div className="pt-[146px] pb-[325px] max-2xl:pb-[260px] max-xl:pb-[180px] max-lg:pb-[120px] max-lg:pt-[100px]">
         <div className=" container mx-auto flex gap-[80px] px-[100px] max-2xl:px-4 max-xl:px-2">
           <div className="mt-[100px] min-w-[634px] flex flex-col gap-10 max-lg:gap-5">
             <div className="flex flex-col gap-3 max-lg:gap-1">
@@ -134,8 +134,8 @@ export default function BannerSection() {
               transition={{
                 duration: 1.1,
               }}
-              className="absolute top-10 !w-[780px] max-2xl:!w-[650px] max-xl:!w-[550px] max-lg:!w-[460px]
-            right-[-195px] max-2xl:right-[-100px] max-xl:right-[-190px]"
+              className="absolute top-[-40px] !w-[950px] max-2xl:!w-[850px] max-xl:!w-[700px] max-lg:!w-[600px]
+            right-[-250px] max-2xl:right-[-170px] max-xl:right-[-260px] max-lg:top-[10px]"
             >
               <MainAnimation animationData={animationData} loop={true} />
               {/* <img

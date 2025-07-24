@@ -244,7 +244,7 @@ function MobilePartner() {
             setApi={setApi}
           >
             <CarouselContent>
-              {Array.from({ length: 2 }).map((_, index) => (
+              {Array.from({ length: 3 }).map((_, index) => (
                 <CarouselItem key={index} className="">
                   <div className="flex flex-col gap-[29px]">
                     <motion.div
@@ -281,18 +281,23 @@ function MobilePartner() {
                       className="p-6 flex flex-col gap-[22px] border border-[#AED0FF] rounded-[8px] bg-linear-to-b from-[#FFFFFFCC] to-[#FFFFFF00]"
                     >
                       <span className="text-center text-[#202A3D] font-bold text-xl leading-[30px] max-xl:text-lg">
-                        {listPartner[index + 1].title}
+                        {listPartner[listPartner.length - index - 1].title}
                       </span>
                       <Separator className="m-0 mt-1.5 bg-[#E9EAEB]" />
                       <div className="h-10 flex justify-center items-center gap-2">
-                        {listPartner[index + 1].imges.map((img) => (
-                          <div key={img.code} className="h-fit">
-                            {img.icon}
-                          </div>
-                        ))}
+                        {listPartner[listPartner.length - index - 1].imges.map(
+                          (img) => (
+                            <div key={img.code} className="h-fit">
+                              {img.icon}
+                            </div>
+                          )
+                        )}
                       </div>
                       <span className="mt-[18px] text-[#202A3D] text-center text-base leading-6 whitespace-pre-line max-xl:text-xs">
-                        {listPartner[index + 1].description}
+                        {
+                          listPartner[listPartner.length - index - 1]
+                            .description
+                        }
                       </span>
                     </motion.div>
                   </div>

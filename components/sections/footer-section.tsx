@@ -311,7 +311,7 @@ export default function FooterSection() {
                   });
                   event.preventDefault();
                 }}
-                className="cursor-pointer text-[#0D152E] text-base font-medium tracking-[-0.6px] leading-normal"
+                className="cursor-pointer text-[#0D152E] text-base font-medium tracking-[-0.6px] leading-normal hover:text-blue-600"
               >
                 Tầm nhìn
               </span>
@@ -331,7 +331,7 @@ export default function FooterSection() {
                   });
                   event.preventDefault();
                 }}
-                className="cursor-pointer text-[#0D152E] text-base font-medium tracking-[-0.6px] leading-normal"
+                className="cursor-pointer text-[#0D152E] text-base font-medium tracking-[-0.6px] leading-normal hover:text-blue-600"
               >
                 Sứ mệnh
               </span>
@@ -351,7 +351,7 @@ export default function FooterSection() {
                   });
                   event.preventDefault();
                 }}
-                className="cursor-pointer text-[#0D152E] text-base font-medium tracking-[-0.6px] leading-normal"
+                className="cursor-pointer text-[#0D152E] text-base font-medium tracking-[-0.6px] leading-normal hover:text-blue-600"
               >
                 Giá trị cốt lõi
               </span>
@@ -371,7 +371,7 @@ export default function FooterSection() {
                   });
                   event.preventDefault();
                 }}
-                className="cursor-pointer text-[#0D152E] text-base font-medium tracking-[-0.6px] leading-normal"
+                className="cursor-pointer text-[#0D152E] text-base font-medium tracking-[-0.6px] leading-normal hover:text-blue-600"
               >
                 Ứng dụng
               </span>
@@ -391,7 +391,7 @@ export default function FooterSection() {
                   });
                   event.preventDefault();
                 }}
-                className="cursor-pointer text-[#0D152E] text-base font-medium tracking-[-0.6px] leading-normal"
+                className="cursor-pointer text-[#0D152E] text-base font-medium tracking-[-0.6px] leading-normal hover:text-blue-600"
               >
                 Sản phẩm
               </span>
@@ -411,7 +411,7 @@ export default function FooterSection() {
                   });
                   event.preventDefault();
                 }}
-                className="cursor-pointer text-[#0D152E] text-base font-medium tracking-[-0.6px] leading-normal"
+                className="cursor-pointer text-[#0D152E] text-base font-medium tracking-[-0.6px] leading-normal hover:text-blue-600"
               >
                 Đối tác
               </span>
