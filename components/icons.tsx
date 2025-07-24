@@ -5794,4 +5794,183 @@ export const Icons = {
       />
     </svg>
   ),
+  mobileMissionBlurTopIcon: () => (
+    <svg
+      width="140"
+      height="130"
+      viewBox="0 0 140 130"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g opacity="0.2" filter="url(#filter0_f_105_526)">
+        <g style={{ mixBlendMode: "overlay" }}>
+          <path
+            d="M16.4468 95.9718L71.6336 114.067L70.8633 52.5278L15.6765 34.4321L16.4468 95.9718Z"
+            fill="white"
+            style={{ fill: "white", fillOpacity: 1 }}
+          />
+        </g>
+        <path
+          d="M16.4468 95.9718L71.6336 114.067L70.8633 52.5278L15.6765 34.4321L16.4468 95.9718Z"
+          fill="#7DAEFF"
+          style={{
+            fill: "color(display-p3 0.4882 0.6832 1.0000)",
+            fillOpacity: 1,
+          }}
+        />
+        <g style={{ mixBlendMode: "overlay" }}>
+          <path
+            d="M70.8633 52.5272L123.343 34.6124L68.1599 16.5167L15.6765 34.4315L70.8633 52.5272Z"
+            fill="white"
+            style={{ fill: "white", fillOpacity: 1 }}
+          />
+        </g>
+        <g style={{ mixBlendMode: "overlay" }}>
+          <path
+            d="M70.8633 52.5272L123.343 34.6124L68.1599 16.5167L15.6765 34.4315L70.8633 52.5272Z"
+            fill="white"
+            style={{ fill: "white", fillOpacity: 1 }}
+          />
+        </g>
+        <path
+          d="M70.8633 52.5272L123.343 34.6124L68.1599 16.5167L15.6765 34.4315L70.8633 52.5272Z"
+          fill="url(#paint0_linear_105_526)"
+        />
+        <path
+          d="M71.6314 114.067L124.111 96.1524L123.341 34.6128L70.8611 52.5276L71.6314 114.067Z"
+          fill="#1663E1"
+          style={{
+            fill: "color(display-p3 0.0855 0.3884 0.8805)",
+            fillOpacity: 1,
+          }}
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_f_105_526"
+          x="0.0297461"
+          y="0.869956"
+          width="139.728"
+          height="128.844"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            result="shape"
+          />
+          <feGaussianBlur
+            stdDeviation="7.82338"
+            result="effect1_foregroundBlur_105_526"
+          />
+        </filter>
+        <linearGradient
+          id="paint0_linear_105_526"
+          x1="69.5098"
+          y1="16.5167"
+          x2="69.5098"
+          y2="52.5272"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop
+            stopColor="#CFE1FF"
+            style={{
+              stopColor: "color(display-p3 0.8121 0.8838 1.0000)",
+              stopOpacity: 1,
+            }}
+          />
+          <stop
+            offset="1"
+            stopColor="white"
+            style={{
+              stopColor: "white",
+              stopOpacity: 1,
+            }}
+          />
+        </linearGradient>
+      </defs>
+    </svg>
+  ),
+  mobileMissionBlurBotIcon: () => (
+    <svg
+      width="141"
+      height="130"
+      viewBox="0 0 141 130"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g opacity="0.2" filter="url(#filter0_f_105_519)">
+        <path
+          d="M16.7703 95.4554L71.9571 113.551L71.1868 52.0114L16 33.9158L16.7703 95.4554Z"
+          fill="#7DAEFF"
+          style={{
+            fill: "color(display-p3 0.4882 0.6832 1.0000)",
+            fillOpacity: 1,
+          }}
+        />
+        <path
+          d="M71.1868 52.0105L123.666 34.0956L68.4834 16L16 33.9148L71.1868 52.0105Z"
+          fill="url(#paint0_linear_105_519)"
+        />
+        <path
+          d="M71.9551 113.551L124.435 95.6361L123.665 34.0964L71.1848 52.0113L71.9551 113.551Z"
+          fill="#1663E1"
+          style={{
+            fill: "color(display-p3 0.0855 0.3884 0.8805)",
+            fillOpacity: 1,
+          }}
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_f_105_519"
+          x="0.353232"
+          y="0.353232"
+          width="139.728"
+          height="128.845"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            result="shape"
+          />
+          <feGaussianBlur
+            stdDeviation="7.82338"
+            result="effect1_foregroundBlur_105_519"
+          />
+        </filter>
+        <linearGradient
+          id="paint0_linear_105_519"
+          x1="69.8332"
+          y1="16"
+          x2="69.8332"
+          y2="52.0105"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop
+            stopColor="#CFE1FF"
+            style={{
+              stopColor: "color(display-p3 0.8121 0.8838 1.0000)",
+              stopOpacity: 1,
+            }}
+          />
+          <stop
+            offset="1"
+            stopColor="white"
+            style={{
+              stopColor: "white",
+              stopOpacity: 1,
+            }}
+          />
+        </linearGradient>
+      </defs>
+    </svg>
+  ),
 };

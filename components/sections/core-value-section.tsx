@@ -15,7 +15,7 @@ import { Button } from "../ui/button";
 
 const listCore = [
   {
-    id: 1,
+    id: 0,
     icon: <Icons.lightIcon />,
     title: "Innovative - Đổi mới không ngừng",
     description:
@@ -26,7 +26,7 @@ const listCore = [
     text2: "KHÔNG NGỪNG",
   },
   {
-    id: 2,
+    id: 1,
     icon: <Icons.shieldIcon />,
     title: "Informative - Dữ liệu minh bạch",
     description:
@@ -37,7 +37,7 @@ const listCore = [
     text2: "MINH BẠCH",
   },
   {
-    id: 3,
+    id: 2,
     icon: <Icons.adaptiveIcon />,
     title: "Adaptive - Linh hoạt và thích ứng",
     description:
@@ -48,7 +48,7 @@ const listCore = [
     text2: "& THÍCH ỨNG",
   },
   {
-    id: 4,
+    id: 3,
     icon: <Icons.trustIcon />,
     title: "Trust - Niềm tin là nền tảng",
     description:
@@ -59,7 +59,7 @@ const listCore = [
     text2: "LÀ NỀN TẢNG",
   },
   {
-    id: 5,
+    id: 4,
     icon: <Icons.impactIcon />,
     title: "Impactful - Phát triển bền vững",
     description:
@@ -72,7 +72,19 @@ const listCore = [
 ];
 
 export default function CoreValueSection() {
-  const [selected, setSelected] = useState(listCore[0]);
+  const [selected, setSelected] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (selected < 4) {
+        setSelected((prevCount) => prevCount + 1);
+      } else {
+        setSelected(0);
+      }
+    }, 6000);
+
+    return () => clearTimeout(timer);
+  }, [selected]);
 
   const isMobile = useIsMobile();
   if (isMobile) {
@@ -90,7 +102,7 @@ export default function CoreValueSection() {
             transition={{
               duration: 1.1,
             }}
-            className="text-center text-[#181818] font-bold text-[36px] leading-11 tracking-[-0.72px] max-lg:text-2xl"
+            className="text-center text-[#181818] font-bold text-4xl leading-11 tracking-[-0.72px] max-lg:text-2xl"
           >
             Giá trị cốt lõi
           </motion.span>
@@ -107,12 +119,12 @@ export default function CoreValueSection() {
                   }}
                   className={cn(
                     "py-6 px-4 flex gap-8 items-center cursor-pointer",
-                    selected.id === item.id && "border-l border-[#00B6FF]",
-                    selected.id === item.id && "bg-core"
+                    selected === item.id && "border-l border-[#00B6FF]",
+                    selected === item.id && "bg-core"
                   )}
                   key={index}
                   onClick={() => {
-                    setSelected(item);
+                    setSelected(item.id);
                   }}
                 >
                   <div>{item.icon}</div>
@@ -138,17 +150,17 @@ export default function CoreValueSection() {
               <AnimatePresence mode="wait">
                 <div className="relative h-fit">
                   <motion.div
-                    key={selected ? selected.code : "empty"}
+                    key={listCore[selected].code}
                     initial={{ x: -50, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: 10, opacity: 0 }}
                     transition={{ duration: 0.4 }}
                   >
-                    <img src={selected ? selected.img : ""} alt="" />
+                    <img src={listCore[selected].img} alt="" />
                   </motion.div>
 
                   <motion.div
-                    key={selected ? `${selected.code}_img` : "empty"}
+                    key={`${listCore[selected].code}_img`}
                     initial={{ x: -20, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: 0, opacity: 0 }}
@@ -159,7 +171,7 @@ export default function CoreValueSection() {
                   </motion.div>
 
                   <motion.div
-                    key={selected ? `${selected.code}_text` : "empty"}
+                    key={`${listCore[selected].code}_text`}
                     initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 0, opacity: 0 }}
@@ -171,13 +183,13 @@ export default function CoreValueSection() {
                         className="text-[#4278E4] text-[56px] font-black leading-[24px] max-2xl:text-[52px]
                        max-xl:text-[46px] max-lg:text-[34px]"
                       >
-                        {selected.text1}
+                        {listCore[selected].text1}
                       </span>
                       <span
                         className="text-[#4278E4] text-[56px] font-black leading-[24px] max-2xl:text-[52px]  
                       max-xl:text-[46px] max-lg:text-[34px]"
                       >
-                        {selected.text2}
+                        {listCore[selected].text2}
                       </span>
                     </div>
                   </motion.div>
@@ -226,7 +238,7 @@ function MobileCoreValue() {
           transition={{
             duration: 1.1,
           }}
-          className="text-center text-[#181818] text-4xl leading-11 font-bold tracking-[-0.72px]"
+          className="text-center text-[#181818] text-[30px] leading-[38px] font-bold tracking-[-0.72px]"
         >
           Giá trị cốt lõi
         </motion.span>

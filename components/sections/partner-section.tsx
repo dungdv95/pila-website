@@ -218,7 +218,7 @@ function MobilePartner() {
           transition={{
             duration: 1.1,
           }}
-          className="text-center text-[#181818] text-4xl leading-11 tracking-[-0.72px]"
+          className="text-center text-[#181818] text-[30px] leading-[38px] font-bold tracking-[-0.72px]"
         >
           Đối tác chiến lược
         </motion.span>
@@ -229,7 +229,7 @@ function MobilePartner() {
           transition={{
             duration: 1.1,
           }}
-          className="text-center text-[#202A3D] text-lg leading-7"
+          className="text-center text-[#181818] text-base leading-6"
         >
           PILA thiết lập các mối quan hệ hợp tác chiến lược sâu rộng với các đơn
           vị đầu ngành trong khu vực công và tư, nhằm thúc đẩy việc áp dụng và

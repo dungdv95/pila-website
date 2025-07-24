@@ -46,7 +46,7 @@ export default function VisionSection() {
             transition={{
               duration: 1.1,
             }}
-            className="px-5 text-center font-bold text-[36px] leading-11 tracking-[-0.72px] text-gradient-vision"
+            className="px-5 text-center font-bold text-[30px] leading-[38px] tracking-[-0.72px] text-[#181818]"
           >
             Tầm nhìn
           </motion.span>

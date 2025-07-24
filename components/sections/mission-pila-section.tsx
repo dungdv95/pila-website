@@ -4,27 +4,26 @@ import MainAnimation from "../animation/main-animation";
 import { useIsMobile } from "../hooks/use-mobile";
 import { motion } from "motion/react";
 import animationData from "@/components/animation/animation-mission.json";
+import { Icons } from "../icons";
 
 export default function MissionPilaSection() {
   const isMobile = useIsMobile();
 
   if (isMobile) {
     return (
-      <section
-        id="mission"
-        className="relative mt-[77px] py-[30px] bg-mobile-mission"
-      >
-        <motion.div
-          viewport={{ once: true }}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 1.1,
-          }}
-          //   className="absolute top-[-130px] w-[1200px] left-[-17%] max-[45rem]:left-[-22%] max-[40rem]:left-[-31%] max-[35rem]:left-[-42%]
-          // max-[31rem]:left-[-54%] max-[28rem]:left-[-65%] max-[26.9rem]:left-[-69%] max-[26rem]:left-[-74%] max-[25rem]:left-[-82%] max-[23.75rem]:left-[-87%]
-          // "
-          className="absolute w-[900px] top-[-10px] left-[-12%]
+      <section id="mission" className=" mt-[77px] py-[30px] ">
+        <div className="relative ">
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1.1,
+            }}
+            //   className="absolute top-[-130px] w-[1200px] left-[-17%] max-[45rem]:left-[-22%] max-[40rem]:left-[-31%] max-[35rem]:left-[-42%]
+            // max-[31rem]:left-[-54%] max-[28rem]:left-[-65%] max-[26.9rem]:left-[-69%] max-[26rem]:left-[-74%] max-[25rem]:left-[-82%] max-[23.75rem]:left-[-87%]
+            // "
+            className="py-4 absolute w-[900px] top-[-10px] left-[-12%]
           max-[43.75rem]:w-[800px] max-[43.75rem]:left-[-15%]
           max-[37.5rem]:w-[1000px]  max-[37.5rem]:left-[-39%]
           max-[34.5rem]:left-[-48%]
@@ -33,20 +32,33 @@ export default function MissionPilaSection() {
           max-[26.5rem]:left-[-44%]
           max-[25rem]:w-[700px] max-[25rem]:left-[-38%]
           max-[23.5rem]:w-[680px] max-[23.5rem]:left-[-41%]
+          bg-mobile-mission
         "
-        >
-          <MainAnimation animationData={animationData} loop={true} />
-          {/* <img
+          >
+            <MainAnimation animationData={animationData} loop={true} />
+            {/* <img
             src="/images/mission.png"
             className=" w-full object-cover "
             alt=""
           /> */}
-        </motion.div>
-
-        <div className="">
+          </motion.div>
+          <div className="absolute top-[-150px] left-[40%] max-[31.25rem]:left-[35%]">
+            <Icons.mobileMissionBlurTopIcon />
+          </div>
           <div
-            className="px-5 mt-[560px] max-[43.75rem]:mt-[505px] max-[37.5rem]:mt-[630px] max-[31.25rem]:mt-[540px]
-          max-[28.25rem]:mt-[470px] max-[25rem]:mt-[430px] max-[23.5rem]:mt-[420px]
+            className="absolute top-[630px] max-[43.75rem]:top-[550px] left-[40%] max-[37.5rem]:top-[700px] max-[31.25rem]:top-[620px] max-[28.25rem]:top-[520px]
+          max-[25rem]:top-[494px] max-[23.5rem]:top-[482px]"
+          >
+            <Icons.mobileMissionBlurBotIcon />
+          </div>
+        </div>
+
+        <div
+          className="px-5 mt-[670px] max-[43.75rem]:mt-[600px] max-[37.5rem]:mt-[740px] max-[31.25rem]:mt-[660px] max-[28.25rem]:mt-[580px]
+        max-[25rem]:mt-[540px] max-[23.5rem]:mt-[520px]"
+        >
+          <div
+            className="
            flex flex-col gap-[31px]"
           >
             <motion.span
@@ -56,7 +68,7 @@ export default function MissionPilaSection() {
               transition={{
                 duration: 1.1,
               }}
-              className="text-center font-bold text-[36px] leading-[44px] tracking-[-0.02em] text-gradient-vision"
+              className="text-center font-bold text-[30px] leading-[38px] tracking-[-0.02em] text-[#040404]"
             >
               Sứ mệnh
             </motion.span>
@@ -69,7 +81,7 @@ export default function MissionPilaSection() {
                 transition={{
                   duration: 1.1,
                 }}
-                className="text-center text-[#202A3D] text-lg leading-7"
+                className="text-start text-[#202A3D] text-lg leading-7"
               >
                 PILA cam kết xây dựng các giải pháp định danh số phi tập trung
                 (DID) như một nền tảng cốt lõi để giải quyết các thách thức của
@@ -82,7 +94,7 @@ export default function MissionPilaSection() {
                 transition={{
                   duration: 1.1,
                 }}
-                className="text-center text-[#202A3D] text-lg leading-7"
+                className="text-start text-[#202A3D] text-lg leading-7"
               >
                 Bằng kinh nghiệm công nghệ và năng lực ứng dụng các giải pháp
                 tiên tiến như
@@ -94,7 +106,7 @@ export default function MissionPilaSection() {
                 transition={{
                   duration: 1.1,
                 }}
-                className="flex justify-center"
+                className="pl-3 flex justify-start"
               >
                 <ul className="!list-disc list-inside custom-list text-[#202A3D] text-lg leading-7">
                   <li className="mb-0.5">Blockchain</li>
@@ -110,7 +122,7 @@ export default function MissionPilaSection() {
                 transition={{
                   duration: 1.1,
                 }}
-                className="text-center text-[#202A3D] text-lg leading-7"
+                className="text-start text-[#202A3D] text-lg leading-7"
               >
                 Chúng tôi kiến tạo một môi trường số an toàn, minh bạch, nơi dữ
                 liệu được kiểm chứng, giao dịch được tin cậy, và người dân,

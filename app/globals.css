@@ -790,6 +790,12 @@ body {
   border-radius: 15px; /* nhỏ hơn hoặc bằng lớp ngoài để khớp */
   /* padding: 16px; */
 }
+.border-inner {
+  border: 1px solid transparent;
+  border-image-source: linear-gradient(180deg, #ffffff, #4bb0ff);
+  border-image-slice: 1;
+  border-radius: 15px;
+}
 .bg-footer {
   background: linear-gradient(
     142deg,
@@ -804,6 +810,14 @@ body {
     #fff 30.16%,
     #dafff4 65.05%,
     #d6ffff 73.48%
+  );
+}
+.mobile-bg-banner {
+  background: linear-gradient(
+    174deg,
+    #d6ffff 18.96%,
+    #dafff4 32.06%,
+    #fff 86.25%
   );
 }
 .bg-core {

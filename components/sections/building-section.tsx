@@ -17,7 +17,7 @@ export default function BuildingSection() {
           transition={{
             duration: 1.1,
           }}
-          className="text-center text-[#181818] text-4xl leading-11 tracking-[-0.72px] font-bold"
+          className="text-center text-[#181818] text-[30px] leading-[38px] tracking-[-0.72px] font-bold"
         >
           Xây dựng hạ tầng
           <br />
@@ -34,7 +34,7 @@ export default function BuildingSection() {
           }}
           className="mt-6 text-center text-[#202A3D] text-lg leading-7"
         >
-          Thúc đẩy phát triển kinh tế số -<br />
+          Thúc đẩy phát triển Kinh tế số -<br />
           Xã hội số
         </motion.span>
 
@@ -73,7 +73,7 @@ export default function BuildingSection() {
             transition={{
               duration: 1.1,
             }}
-            className="mt-2 text-[#181818] text-sm leading-6"
+            className="mt-2 text-[#181818] text-base leading-6"
           >
             NDAChain cung cấp hạ tầng Bảo mật, Phi tập trung, chuẩn quốc tế cho
             Định danh số, Giao dịch dữ liệu và các ứng dụng trong Chuyển đổi số.
@@ -94,7 +94,7 @@ export default function BuildingSection() {
             <div>
               <Icons.buildingLayer />
             </div>
-            <span className="text-sm leading-5">
+            <span className="text-sm leading-5 text-[#181818]">
               Minh bạch, truy xuất và tự chủ dữ liệu
             </span>
           </motion.div>
@@ -110,7 +110,9 @@ export default function BuildingSection() {
             <div>
               <Icons.buildingDatabase />
             </div>
-            <span className="text-sm leading-5">Xác thực dữ liệu</span>
+            <span className="text-sm leading-5 text-[#181818]">
+              Xác thực dữ liệu
+            </span>
           </motion.div>
           <motion.div
             viewport={{ once: true }}
@@ -124,7 +126,7 @@ export default function BuildingSection() {
             <div>
               <Icons.buildingShield />
             </div>
-            <span className="text-sm leading-5">
+            <span className="text-sm leading-5 text-[#181818]">
               Bảo mật và toàn vẹn hệ thống
             </span>
           </motion.div>
@@ -140,7 +142,9 @@ export default function BuildingSection() {
             <div>
               <Icons.buildingServer />
             </div>
-            <span className="text-sm leading-5">Tương thích toàn cầu</span>
+            <span className="text-sm leading-5 text-[#181818]">
+              Tương thích toàn cầu
+            </span>
           </motion.div>
         </div>
         <div className="mt-[70px] flex flex-col gap-10">
@@ -180,7 +184,7 @@ export default function BuildingSection() {
               transition={{
                 duration: 1.1,
               }}
-              className="mt-2 text-[#181818] text-sm leading-6"
+              className="mt-2 text-[#181818] text-base leading-6"
             >
               NDAKey là ứng dụng nhận dạng số phi tập trung Quốc gia, giúp xác
               thực danh tính an toàn thông qua nền tảng nhận dạng số phi tập
@@ -201,7 +205,7 @@ export default function BuildingSection() {
               <div>
                 <Icons.buildingSetting />
               </div>
-              <span className="text-sm leading-5">
+              <span className="text-sm leading-5 text-[#181818]">
                 An toàn trên không gian mạng
               </span>
             </motion.div>
@@ -217,7 +221,7 @@ export default function BuildingSection() {
               <div>
                 <Icons.buildingShieldPhone />
               </div>
-              <span className="text-sm leading-5">
+              <span className="text-sm leading-5 text-[#181818]">
                 Bảo vệ thông tin cá nhân
               </span>
             </motion.div>
@@ -233,7 +237,9 @@ export default function BuildingSection() {
               <div>
                 <Icons.buildingTransfer />
               </div>
-              <span className="text-sm leading-5">Giao dịch an toàn</span>
+              <span className="text-sm leading-5 text-[#181818]">
+                Giao dịch an toàn
+              </span>
             </motion.div>
 
             <motion.div
@@ -248,7 +254,7 @@ export default function BuildingSection() {
               <div>
                 <Icons.buildingShield />
               </div>
-              <span className="text-sm leading-5">
+              <span className="text-sm leading-5 text-[#181818]">
                 Quản lý danh tính tự chủ
               </span>
             </motion.div>
@@ -291,15 +297,15 @@ export default function BuildingSection() {
               transition={{
                 duration: 1.1,
               }}
-              className="mt-2 text-[#181818] text-sm leading-6"
+              className="mt-2 text-[#181818] text-base leading-6"
             >
               Là bộ công cụ hỗ trợ tích hợp do đội ngũ PILA phát triển, NDA SDK
               giúp các nhà phát triển dễ dàng kết nối các chức năng cốt lõi của
               nền tảng như định danh số, xác thực dữ liệu và truy xuất thông tin
               vào ứng dụng của mình. Được thiết kế linh hoạt và thân thiện, NDA
-              SDK tương thích với nhiều nền tảng phổ biến như Kotlin nativce,
-              Swift, giúp tiết kiệm thời gian và công sức trong quá trình triển
-              khai.
+              SDK tương thích với nhiều nền tảng phổ biến như Kotlin Native,
+              Swift, React Native, Flutter giúp tiết kiệm thời gian và công sức
+              trong quá trình triển khai.
             </motion.span>
           </div>
           <div className="flex flex-col gap-6">
@@ -315,7 +321,7 @@ export default function BuildingSection() {
               <div>
                 <Icons.buildingSetting />
               </div>
-              <span className="text-sm leading-5">
+              <span className="text-sm leading-5 text-[#181818]">
                 Tuân thủ các tiêu chuẩn toàn cầu
               </span>
             </motion.div>
@@ -331,7 +337,7 @@ export default function BuildingSection() {
               <div>
                 <Icons.buildingShieldPhone />
               </div>
-              <span className="text-sm leading-5">
+              <span className="text-sm leading-5 text-[#181818]">
                 Triển khai nhanh chóng, tích hợp linh hoạt
               </span>
             </motion.div>
@@ -347,7 +353,7 @@ export default function BuildingSection() {
               <div>
                 <Icons.buildingTransfer />
               </div>
-              <span className="text-sm leading-5">
+              <span className="text-sm leading-5 text-[#181818]">
                 Hỗ trợ và cập nhật liên tục
               </span>
             </motion.div>
@@ -381,7 +387,7 @@ export default function BuildingSection() {
             }}
             className="text-[#202A3D] text-lg leading-7 max-lg:text-base"
           >
-            Thúc đẩy phát triển kinh tế số - Xã hội số
+            Thúc đẩy phát triển Kinh tế số - Xã hội số
           </motion.span>
         </div>
         <div className="relative flex items-center gap-[30px] max-xl:gap-3 max-lg:gap-2">
@@ -628,9 +634,9 @@ export default function BuildingSection() {
               giúp các nhà phát triển dễ dàng kết nối các chức năng cốt lõi của
               nền tảng như định danh số, xác thực dữ liệu và truy xuất thông tin
               vào ứng dụng của mình. Được thiết kế linh hoạt và thân thiện, NDA
-              SDK tương thích với nhiều nền tảng phổ biến như Kotlin nativce,
-              Swift, giúp tiết kiệm thời gian và công sức trong quá trình triển
-              khai.
+              SDK tương thích với nhiều nền tảng phổ biến như Kotlin Native,
+              Swift, React Native, Flutter giúp tiết kiệm thời gian và công sức
+              trong quá trình triển khai.
             </motion.span>
 
             <div className="mt-[11px] flex flex-col gap-6 max-xl:gap-4 max-lg:gap-3">

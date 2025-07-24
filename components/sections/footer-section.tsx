@@ -512,7 +512,7 @@ export default function FooterSection() {
                     duration: 1.1,
                   }}
                   href="https://ndachain.vn/"
-                  className="text-[#1E1E1E] text-lg leading-7"
+                  className="text-[#1E1E1E] text-lg leading-7 hover:text-blue-600"
                   target="_blank"
                 >
                   NDAChain - Nền tảng blockchain quốc gia
@@ -524,7 +524,7 @@ export default function FooterSection() {
                   transition={{
                     duration: 1.1,
                   }}
-                  className="text-[#1E1E1E] text-lg leading-7"
+                  className="text-[#1E1E1E] text-lg leading-7 hover:text-blue-600"
                   href="https://www.ndatrace.vn/vn"
                   target="_blank"
                 >
@@ -537,7 +537,7 @@ export default function FooterSection() {
                   transition={{
                     duration: 1.1,
                   }}
-                  className="text-[#1E1E1E] text-lg leading-7"
+                  className="text-[#1E1E1E] text-lg leading-7 hover:text-blue-600"
                   href="https://www.ndakey.vn/"
                   target="_blank"
                 >

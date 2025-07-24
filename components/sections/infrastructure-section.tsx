@@ -90,7 +90,6 @@ export default function InfrastructureSection() {
             Xây dựng Hạ tầng tin cậy - Phát triển Kinh tế số bền vững
           </motion.span>
         </div>
-
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, y: 40 }}
@@ -218,11 +217,11 @@ function MobileInfra() {
             transition={{
               duration: 1.1,
             }}
-            className="text-center text-[#181818] text-4xl leading-11 font-bold"
+            className="text-center text-[#181818] text-[30px] leading-[38px] font-bold"
           >
             Kiến thiết hạ tầng
             <br />
-            Định danh xác thực
+            Định danh - Xác thực
           </motion.span>
           <motion.span
             viewport={{ once: true }}

@@ -13,7 +13,7 @@ export default function BannerSection() {
     return (
       <section id="banner" className="relative pb-[300px]">
         <div className="overflow-hidden">
-          <div className=" pt-[116px] pb-[170px] bg-banner mobile-polygon">
+          <div className=" pt-[116px] pb-[170px] mobile-bg-banner">
             <div className="relative h-[427px] flex justify-center items-center">
               <motion.div
                 viewport={{ once: true }}
@@ -46,9 +46,11 @@ export default function BannerSection() {
               transition={{
                 duration: 1.1,
               }}
-              className="text-center font-bold text-[36px] leading-11 tracking-[-0.72px] text-gradient"
+              className="text-center font-bold text-[30px] leading-[38px] tracking-[-0.72px] text-gradient"
             >
-              Kiến tạo một nền Kinh tế số Việt Nam
+              Kiến tạo một nền
+              <br />
+              Kinh tế số Việt Nam
             </motion.span>
 
             <motion.span
@@ -58,7 +60,7 @@ export default function BannerSection() {
               transition={{
                 duration: 1.1,
               }}
-              className="text-center font-bold text-[36px] leading-11 tracking-[-0.72px] text-gradient"
+              className="text-center font-bold text-[30px] leading-[38px] tracking-[-0.72px] text-gradient"
             >
               Minh bạch - Hiệu quả - Thịnh vượng
             </motion.span>

@@ -200,7 +200,7 @@ function MobileHeader() {
         transition={{
           duration: 1.1,
         }}
-        className="py-6 px-4 bg-white/80"
+        className="pt-7 px-4 bg-transparent"
       >
         <div className="flex justify-between items-center">
           <div
@@ -229,7 +229,11 @@ function MobileHeader() {
             modal={true}
           >
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
+              <Button
+                variant="default"
+                size="icon"
+                className="bg-white h-10 w-10 rounded-full"
+              >
                 <Icons.mobileListMenuIcon className="size-6" />
               </Button>
             </SheetTrigger>
