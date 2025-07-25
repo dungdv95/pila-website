@@ -164,13 +164,13 @@ body {
   background: linear-gradient(0deg, #4bb0ff 0%, #ffffff 100%);
   padding: 1px;
   border-radius: 16px;
-  /* animation: rotateGradientTop 4s linear infinite; */
+  animation: rotateGradientTop 4s linear infinite;
 }
 .parrent-border-bottom {
   background: linear-gradient(0deg, #4bb0ff 0%, #ffffff 100%);
   padding: 1px;
   border-radius: 16px;
-  /* animation: rotateGradientBot 4s linear infinite; */
+  animation: rotateGradientBot 4s linear infinite;
 }
 
 @keyframes rotateGradientTop {
