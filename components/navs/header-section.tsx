@@ -179,7 +179,7 @@ function MobileHeader() {
         });
       },
       {
-        threshold: 0.3,
+        threshold: 0.1,
         rootMargin: "-100px 0px -100px 0px",
       }
     );
@@ -227,7 +227,7 @@ function MobileHeader() {
           <Sheet
             open={mobileMenuOpen}
             onOpenChange={setMobileMenuOpen}
-            modal={true}
+            // modal={true}
           >
             <SheetTrigger asChild>
               <Button
