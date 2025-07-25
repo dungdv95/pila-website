@@ -64,7 +64,7 @@ export default function InfrastructureSection() {
   }
 
   return (
-    <section id="application" className="pt-16 relative">
+    <section id="application" className="relative mb-32">
       <div className="flex flex-col gap-[76px]">
         <div className="flex flex-col gap-4 items-center">
           <motion.span
@@ -207,7 +207,7 @@ function MobileInfra() {
   }, [api]);
 
   return (
-    <section id="application" className="mt-[90px] relative">
+    <section id="application" className="mb-[96px] relative">
       <div className="flex flex-col">
         <div className="px-5 flex flex-col gap-6">
           <motion.span

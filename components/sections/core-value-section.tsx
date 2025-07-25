@@ -12,6 +12,7 @@ import {
   CarouselItem,
 } from "../ui/carousel";
 import { Button } from "../ui/button";
+import Autoplay from "embla-carousel-autoplay";
 
 const listCore = [
   {
@@ -93,7 +94,7 @@ export default function CoreValueSection() {
 
   return (
     <section id="corevalue" className="bg-white">
-      <div className="container mx-auto py-16 px-[100px] max-2xl:px-4 max-xl:px-2">
+      <div className="container mx-auto pb-32 px-[100px] max-2xl:px-4 max-xl:px-2">
         <div className="flex flex-col gap-[52px]">
           <motion.span
             viewport={{ once: true }}
@@ -229,7 +230,7 @@ function MobileCoreValue() {
   }, [api]);
 
   return (
-    <section id="corevalue" className="px-5 pt-[26px]">
+    <section id="corevalue" className="px-5 mb-[90px]">
       <div className="flex flex-col">
         <motion.span
           viewport={{ once: true }}
@@ -255,6 +256,12 @@ function MobileCoreValue() {
             opts={{ align: "start" }}
             className="w-full max-w-sm"
             setApi={setApi}
+            plugins={[
+              Autoplay({
+                delay: 5000,
+                stopOnInteraction: false,
+              }),
+            ]}
           >
             <CarouselContent>
               {Array.from({ length: 5 }).map((_, index) => (

@@ -26,6 +26,7 @@ export default function Page() {
       </motion.div>
 
       <VisionSection />
+
       <motion.div
         viewport={{ once: true }}
         initial={{ opacity: 0, y: 60 }}

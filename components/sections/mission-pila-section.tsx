@@ -11,7 +11,7 @@ export default function MissionPilaSection() {
 
   if (isMobile) {
     return (
-      <section id="mission" className=" mt-[77px] py-[30px] ">
+      <section id="mission" className="pt-[30px] mb-[56px]">
         <div className="relative ">
           <motion.div
             viewport={{ once: true }}
@@ -137,7 +137,10 @@ export default function MissionPilaSection() {
   }
 
   return (
-    <section id="mission" className="relative py-24 bg-mission max-xl:py-14">
+    <section
+      id="mission"
+      className="relative py-24 mb-32 bg-mission max-xl:py-14"
+    >
       <div className="container mx-auto px-[100px] max-2xl:px-4 max-xl:px-2">
         <div className="flex items-center">
           <div className="w-[47%] flex flex-col gap-[31px] border-l border-gradient pl-8 max-xl:gap-6 max-lg:gap-4">

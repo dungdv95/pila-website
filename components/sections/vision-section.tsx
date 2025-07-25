@@ -37,7 +37,7 @@ export default function VisionSection() {
 
   if (isMobile) {
     return (
-      <section id="vision" className="overflow-hidden bg-white">
+      <section id="vision" className="overflow-hidden bg-white mb-[77px]">
         <div className="flex flex-col gap-4">
           <motion.span
             viewport={{ once: true }}

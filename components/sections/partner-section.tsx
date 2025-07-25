@@ -103,7 +103,7 @@ export default function PartnerSection() {
   }
 
   return (
-    <section id="partner" className="py-16 relative">
+    <section id="partner" className="mb-16 relative">
       <div className="container mx-auto px-[100px] max-2xl:px-4 max-xl:px-2">
         <div className="relative flex flex-col gap-[100px]">
           <div className="flex flex-col gap-4 items-center">
@@ -209,7 +209,7 @@ function MobilePartner() {
   }, [api]);
 
   return (
-    <section id="partner" className="mt-[68px] flex flex-col gap-12">
+    <section id="partner" className="mb-[84px] flex flex-col gap-12">
       <div className="px-5 flex flex-col gap-6">
         <motion.span
           viewport={{ once: true }}

@@ -11,7 +11,7 @@ export default function FooterSection() {
 
   if (isMobile) {
     return (
-      <section className="mt-[84px] px-5 pt-[54px] pb-[121px] bg-footer">
+      <section className="px-5 pt-[54px] pb-[121px] bg-footer">
         <div className="flex flex-col gap-8">
           <motion.div
             viewport={{ once: true }}
@@ -418,9 +418,9 @@ export default function FooterSection() {
             </motion.div>
           </div>
           <Separator className="my-0 bg-[#D5E9E6]" />
-          <div className="flex flex-col gap-[30px]">
+          <div className="flex flex-col gap-6">
             <div className="flex items-start gap-[60px]">
-              <div className="w-[39%] flex flex-col gap-[30px]">
+              <div className="w-[39%] flex flex-col ">
                 <motion.span
                   viewport={{ once: true }}
                   initial={{ opacity: 0, y: 40 }}
@@ -433,7 +433,7 @@ export default function FooterSection() {
                   Hãy cùng nhau kiến tạo niềm tin số!
                 </motion.span>
               </div>
-              <div className="w-[24%] flex gap-[30px] items-start">
+              <div className="w-[24%] flex  items-start">
                 <motion.span
                   viewport={{ once: true }}
                   initial={{ opacity: 0, y: 40 }}
@@ -446,7 +446,7 @@ export default function FooterSection() {
                   Liên hệ
                 </motion.span>
               </div>
-              <div className="w-[37%] flex gap-[30px] items-start">
+              <div className="w-[37%] flex  items-start">
                 <motion.span
                   viewport={{ once: true }}
                   initial={{ opacity: 0, y: 40 }}
@@ -478,7 +478,7 @@ export default function FooterSection() {
                   và hiệu quả.
                 </motion.span>
               </div>
-              <div className="w-[24%] flex flex-col gap-[30px]">
+              <div className="w-[24%] flex flex-col gap-4">
                 <motion.span
                   viewport={{ once: true }}
                   initial={{ opacity: 0, y: 40 }}
@@ -503,7 +503,7 @@ export default function FooterSection() {
                   37 Trần Bình Trọng, Nguyễn Du, Hai Bà Trưng, Hà Nội
                 </motion.span>
               </div>
-              <div className="w-[37%] flex flex-col gap-[30px] ">
+              <div className="w-[37%] flex flex-col gap-4 ">
                 <motion.a
                   viewport={{ once: true }}
                   initial={{ opacity: 0, y: 40 }}

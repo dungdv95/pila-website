@@ -45,7 +45,7 @@ const listNav = [
     id: 5,
     name: "Sản phẩm",
     href: "#product",
-    idSection: "product",
+    idSection: "productSection",
   },
   {
     id: 6,
@@ -173,13 +173,14 @@ function MobileHeader() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            console.log("entry.target.id", entry.target.id);
             setActiveSection(entry.target.id);
           }
         });
       },
       {
-        threshold: 0.1,
-        rootMargin: "-50px 0px -50px 0px",
+        threshold: 0.3,
+        rootMargin: "-100px 0px -100px 0px",
       }
     );
 
@@ -200,7 +201,7 @@ function MobileHeader() {
         transition={{
           duration: 1.1,
         }}
-        className="pt-7 px-4 bg-transparent"
+        className="py-4 px-4 bg-white/80 shadow-sm"
       >
         <div className="flex justify-between items-center">
           <div
