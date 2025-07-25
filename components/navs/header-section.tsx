@@ -57,11 +57,15 @@ const listNav = [
 
 const wait = () => new Promise((resolve) => setTimeout(resolve, 300));
 
-export default function HeaderSection() {
+export default function HeaderSection({
+  isScrolledToTop,
+}: {
+  isScrolledToTop: boolean;
+}) {
   const isMobile = useIsMobile();
 
   if (isMobile) {
-    return <MobileHeader />;
+    return <MobileHeader isScrolledToTop={isScrolledToTop} />;
   }
   return <DesktopHeader />;
 }
@@ -164,7 +168,7 @@ function DesktopHeader() {
   );
 }
 
-function MobileHeader() {
+function MobileHeader({ isScrolledToTop }: { isScrolledToTop: boolean }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
 
@@ -173,7 +177,6 @@ function MobileHeader() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log("entry.target.id", entry.target.id);
             setActiveSection(entry.target.id);
           }
         });
@@ -201,7 +204,10 @@ function MobileHeader() {
         transition={{
           duration: 1.1,
         }}
-        className="py-4 px-4 bg-white/80 shadow-sm"
+        className={cn(
+          "py-4 px-4 ",
+          isScrolledToTop ? "bg-transparent" : "bg-white/90 shadow-sm"
+        )}
       >
         <div className="flex justify-between items-center">
           <div
