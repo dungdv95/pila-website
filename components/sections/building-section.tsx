@@ -49,7 +49,7 @@ export default function BuildingSection() {
             className="py-[18px] px-4 flex justify-center items-center"
           >
             <img
-              src="/images/building-ht.png"
+              src="/images/building-ht.webp"
               alt=""
               className="w-full h-full object-contain"
             />
@@ -159,7 +159,7 @@ export default function BuildingSection() {
               className="flex justify-center items-center"
             >
               <img
-                src="/images/building-phone.png"
+                src="/images/building-phone.webp"
                 alt=""
                 className="w-full h-full object-contain"
               />
@@ -274,7 +274,7 @@ export default function BuildingSection() {
               className="flex justify-center items-center"
             >
               <img
-                src="/images/nda-sdk.png"
+                src="/images/nda-sdk.webp"
                 alt=""
                 className="w-full h-full object-contain"
               />
@@ -489,7 +489,7 @@ export default function BuildingSection() {
           max-xl:w-[600px] max-lg:w-[430px]"
           >
             <img
-              src="/images/building-ht.png"
+              src="/images/building-ht.webp"
               alt=""
               className="w-full h-full object-contain"
             />
@@ -505,7 +505,7 @@ export default function BuildingSection() {
           max-lg:w-[950px] max-lg:left-[-57%] max-lg:bottom-[-48%]"
           >
             <img
-              src="/images/building-bg.png"
+              src="/images/building-bg.webp"
               className="w-full object-cover"
             />
           </motion.div>
@@ -522,7 +522,7 @@ export default function BuildingSection() {
           max-xl:w-[500px] max-lg:w-[430px]"
           >
             <img
-              src="/images/building-phone.png"
+              src="/images/building-phone.webp"
               alt=""
               className="w-full h-full object-contain"
             />
@@ -700,7 +700,7 @@ export default function BuildingSection() {
           max-xl:w-[560px] max-lg:w-[380px]"
           >
             <img
-              src="/images/nda-sdk.png"
+              src="/images/nda-sdk.webp"
               alt=""
               className="w-full h-full object-contain"
             />

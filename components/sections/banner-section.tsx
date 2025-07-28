@@ -24,11 +24,6 @@ export default function BannerSection() {
                 }}
                 className="w-[620px] absolute top-0 left-[6%] max-[37.5rem]:left-[-7%] max-[31.25rem]:left-[-10%] max-[25rem]:left-[-15%]"
               >
-                {/* <img
-                  src="/images/pila-banner.png"
-                  className=" w-full object-cover "
-                  alt=""
-                /> */}
                 <MainAnimation animationData={animationData} loop={true} />
               </motion.div>
             </div>
@@ -140,11 +135,6 @@ export default function BannerSection() {
             right-[-250px] max-2xl:right-[-170px] max-xl:right-[-260px] max-lg:top-[10px]"
             >
               <MainAnimation animationData={animationData} loop={true} />
-              {/* <img
-                src="/images/pila-banner.png"
-                className=" w-full object-cover "
-                alt=""
-              /> */}
             </motion.div>
           </div>
         </div>

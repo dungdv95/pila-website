@@ -168,7 +168,7 @@ export default function InfrastructureSection() {
               "
               >
                 <img
-                  src="/images/earth.png"
+                  src="/images/earth.webp"
                   className=" w-full object-cover "
                   alt=""
                 />
@@ -248,7 +248,7 @@ function MobileInfra() {
             className="absolute w-[484px] top-[70px]"
           >
             <img
-              src="/images/earth.png"
+              src="/images/earth.webp"
               className=" w-full object-contain "
               alt=""
             />

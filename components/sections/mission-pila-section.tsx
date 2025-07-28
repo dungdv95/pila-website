@@ -36,11 +36,6 @@ export default function MissionPilaSection() {
         "
           >
             <MainAnimation animationData={animationData} loop={true} />
-            {/* <img
-            src="/images/mission.png"
-            className=" w-full object-cover "
-            alt=""
-          /> */}
           </motion.div>
           <div className="absolute top-[-150px] left-[40%] max-[31.25rem]:left-[35%]">
             <Icons.mobileMissionBlurTopIcon />
@@ -229,7 +224,7 @@ export default function MissionPilaSection() {
               "
             >
               <img
-                src="/images/bg-mission-blur.png"
+                src="/images/bg-mission-blur.webp"
                 className=" w-full object-cover "
                 alt=""
               />
@@ -240,24 +235,6 @@ export default function MissionPilaSection() {
             >
               <MainAnimation animationData={animationData} loop={true} />
             </div>
-            {/* <motion.div
-              viewport={{ once: true }}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 1.1,
-              }}
-              className="absolute w-[1050px] top-[-380px] left-[-100px]
-              max-2xl:w-[900px] max-2xl:top-[-310px] max-2xl:left-[-70px]
-              max-xl:w-[800px] max-xl:top-[-280px] max-xl:left-[-20px]"
-            >
-              <img
-                src="/images/bg-mission-blur.png"
-                className=" w-full object-cover "
-                alt=""
-              />
-              <MainAnimation animationData={animationData} loop={true} />
-            </motion.div> */}
           </div>
         </div>
       </div>

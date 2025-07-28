@@ -175,7 +175,7 @@ export default function PartnerSection() {
             }}
             className="w-full absolute bottom-[-5%] left-0 max-2xl:bottom-[-5%] max-xl:bottom-[1%] max-lg:bottom-[15%]"
           >
-            <img src="/images/map-earth.png" className="w-full object-cover" />
+            <img src="/images/map-earth.webp" className="w-full object-cover" />
           </motion.div>
         </div>
       </div>
@@ -324,7 +324,7 @@ function MobilePartner() {
           </div>
         </div>
         <div className="z-0 w-[1200px] absolute bottom-[-10%] left-[-20%] max-[37.5rem]:left-[-36%] max-[31.25rem]:left-[-58%] max-[25rem]:left-[-70%]">
-          <img src="/images/map-earth.png" className="w-full object-cover" />
+          <img src="/images/map-earth.webp" className="w-full object-cover" />
         </div>
       </div>
     </section>

@@ -21,7 +21,7 @@ const listCore = [
     title: "Innovative - Đổi mới không ngừng",
     description:
       "Chúng tôi tiên phong ứng dụng công nghệ đột phá như Blockchain, Big Data và Phygital để tạo ra các giải pháp định danh và xác thực tiên tiến, góp phần giải quyết các vấn đề cốt lõi của nền kinh tế số.",
-    img: "/images/core-renew.png",
+    img: "/images/core-renew.webp",
     code: "innovative",
     text1: "ĐỔI MỚI",
     text2: "KHÔNG NGỪNG",
@@ -32,7 +32,7 @@ const listCore = [
     title: "Informative - Dữ liệu minh bạch",
     description:
       "Chúng tôi phát triển hệ thống quản trị và xác thực dữ liệu đáng tin cậy, nơi thông tin có thể kiểm chứng, phục vụ việc ra quyết định hiệu quả và tăng cường kết nối số.",
-    img: "/images/dlmb.png",
+    img: "/images/dlmb.webp",
     code: "informative",
     text1: "DỮ LIỆU",
     text2: "MINH BẠCH",
@@ -43,7 +43,7 @@ const listCore = [
     title: "Adaptive - Linh hoạt và thích ứng",
     description:
       "PILA xây dựng các nền tảng mở, liên thông, dễ tích hợp, sẵn sàng thích ứng với sự thay đổi nhanh chóng của công nghệ, nhu cầu thị trường và khung pháp lý.",
-    img: "/images/adaptive.png",
+    img: "/images/adaptive.webp",
     code: "adaptive",
     text1: "LINH HOẠT",
     text2: "& THÍCH ỨNG",
@@ -54,7 +54,7 @@ const listCore = [
     title: "Trust - Niềm tin là nền tảng",
     description:
       "Chúng tôi đặt niềm tin số làm trọng tâm, đảm bảo bảo mật, quyền riêng tư và kiểm soát dữ liệu cho người dùng, đồng thời tuân thủ chặt chẽ quy định pháp luật trong mọi giải pháp công nghệ.",
-    img: "/images/trust.png",
+    img: "/images/trust.webp",
     code: "trust",
     text1: "NIỀM TIN",
     text2: "LÀ NỀN TẢNG",
@@ -65,7 +65,7 @@ const listCore = [
     title: "Impactful - Phát triển bền vững",
     description:
       "Mỗi sản phẩm và dịch vụ của PILA không chỉ mang lại hiệu quả kinh tế mà còn hướng đến tạo tác động tích cực và bền vững cho xã hội, góp phần xây dựng một hệ sinh thái số công bằng và thịnh vượng.",
-    img: "/images/impact.png",
+    img: "/images/impact.webp",
     code: "impactful",
     text1: "PHÁT TRIỂN",
     text2: "BỀN VỮNG",
