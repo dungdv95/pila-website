@@ -1,10 +1,11 @@
 "use client";
 
+import React, { lazy, Suspense } from "react";
 import { motion } from "motion/react";
 import { useIsMobile } from "../hooks/use-mobile";
-import AnimationFactory from "../animation/main-animation";
-import MainAnimation from "../animation/main-animation";
-import animationData from "@/components/animation/animation-factory.json";
+import { Skeleton } from "../ui/skeleton";
+
+const LazyAnimationBanner = lazy(() => import("./lazy-animation-banner"));
 
 export default function BannerSection() {
   const isMobile = useIsMobile();
@@ -24,7 +25,10 @@ export default function BannerSection() {
                 }}
                 className="w-[620px] absolute top-0 left-[6%] max-[37.5rem]:left-[-7%] max-[31.25rem]:left-[-10%] max-[25rem]:left-[-15%]"
               >
-                <MainAnimation animationData={animationData} loop={true} />
+                <Suspense fallback={<Skeleton className="h-10 w-[600px]" />}>
+                  <LazyAnimationBanner />
+                </Suspense>
+                {/* <MainAnimation animationData={animationData} loop={true} /> */}
               </motion.div>
             </div>
           </div>
@@ -134,7 +138,10 @@ export default function BannerSection() {
               className="absolute top-[-40px] !w-[950px] max-2xl:!w-[850px] max-xl:!w-[700px] max-lg:!w-[600px]
             right-[-250px] max-2xl:right-[-170px] max-xl:right-[-260px] max-lg:top-[10px]"
             >
-              <MainAnimation animationData={animationData} loop={true} />
+              {/* <MainAnimation animationData={animationData} loop={true} /> */}
+              <Suspense fallback={<Skeleton className="h-10 w-[600px]" />}>
+                <LazyAnimationBanner />
+              </Suspense>
             </motion.div>
           </div>
         </div>

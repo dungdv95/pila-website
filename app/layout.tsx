@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "./theme-provider";
 import LayoutPage from "@/components/navs/layout-page";
 import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -54,20 +55,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-QKN4ZPXJ6S`}
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-QKN4ZPXJ6S');
-          `}
-        </Script>
-      </head>
       <body className={`${inter.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
@@ -78,6 +65,7 @@ export default function RootLayout({
           <LayoutPage>{children}</LayoutPage>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-QKN4ZPXJ6S" />
     </html>
   );
 }

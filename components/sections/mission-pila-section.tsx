@@ -1,10 +1,14 @@
 "use client";
 
+import React, { lazy, Suspense } from "react";
 import MainAnimation from "../animation/main-animation";
 import { useIsMobile } from "../hooks/use-mobile";
 import { motion } from "motion/react";
 import animationData from "@/components/animation/animation-mission.json";
 import { Icons } from "../icons";
+import { Skeleton } from "../ui/skeleton";
+
+const LazyAnimationMission = lazy(() => import("./lazy-animation-mission"));
 
 export default function MissionPilaSection() {
   const isMobile = useIsMobile();
@@ -35,13 +39,16 @@ export default function MissionPilaSection() {
           bg-mobile-mission
         "
           >
-            <MainAnimation animationData={animationData} loop={true} />
+            <Suspense fallback={<Skeleton className="h-10 w-[600px]" />}>
+              <LazyAnimationMission />
+            </Suspense>
+            {/* <MainAnimation animationData={animationData} loop={true} /> */}
           </motion.div>
-          <div className="absolute top-[-150px] left-[40%] max-[31.25rem]:left-[35%]">
+          <div className="z-0 absolute top-[-150px] left-[40%] max-[31.25rem]:left-[35%]">
             <Icons.mobileMissionBlurTopIcon />
           </div>
           <div
-            className="absolute top-[630px] max-[43.75rem]:top-[550px] left-[40%] max-[37.5rem]:top-[700px] max-[31.25rem]:top-[620px] max-[28.25rem]:top-[520px]
+            className="z-0 absolute top-[630px] max-[43.75rem]:top-[550px] left-[40%] max-[37.5rem]:top-[700px] max-[31.25rem]:top-[620px] max-[28.25rem]:top-[520px]
           max-[25rem]:top-[494px] max-[23.5rem]:top-[482px]"
           >
             <Icons.mobileMissionBlurBotIcon />
@@ -49,7 +56,7 @@ export default function MissionPilaSection() {
         </div>
 
         <div
-          className="px-5 mt-[670px] max-[43.75rem]:mt-[600px] max-[37.5rem]:mt-[740px] max-[31.25rem]:mt-[660px] max-[28.25rem]:mt-[580px]
+          className="relative px-5 mt-[670px] max-[43.75rem]:mt-[600px] max-[37.5rem]:mt-[740px] max-[31.25rem]:mt-[660px] max-[28.25rem]:mt-[580px]
         max-[25rem]:mt-[540px] max-[23.5rem]:mt-[520px]"
         >
           <div
@@ -63,7 +70,7 @@ export default function MissionPilaSection() {
               transition={{
                 duration: 1.1,
               }}
-              className="text-center font-bold text-[30px] leading-[38px] tracking-[-0.02em] text-[#040404]"
+              className="z-20 text-center font-bold text-[30px] leading-[38px] tracking-[-0.02em] text-[#040404]"
             >
               Sứ mệnh
             </motion.span>
@@ -137,8 +144,8 @@ export default function MissionPilaSection() {
       className="relative py-24 mb-32 bg-mission max-xl:py-14"
     >
       <div className="container mx-auto px-[100px] max-2xl:px-4 max-xl:px-2">
-        <div className="flex items-center">
-          <div className="w-[47%] flex flex-col gap-[31px] border-l border-gradient pl-8 max-xl:gap-6 max-lg:gap-4">
+        <div className="relative flex items-center">
+          <div className="z-10 w-[47%] flex flex-col gap-[31px] border-l border-gradient pl-8 max-xl:gap-6 max-lg:gap-4">
             <motion.span
               viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
@@ -146,7 +153,7 @@ export default function MissionPilaSection() {
               transition={{
                 duration: 1.1,
               }}
-              className="font-bold text-[36px] leading-[44px] tracking-[-0.02em] bg-gradient-to-r from-[#181818] via-[#7E7E7E] to-[#7E7E7E] text-transparent bg-clip-text max-lg:text-xl"
+              className="font-bold text-[36px] leading-[44px] tracking-[-0.02em] bg-gradient-to-r from-[#181818] via-[#7E7E7E] to-[#7E7E7E] text-transparent bg-clip-text max-lg:text-xl selection:text-black"
             >
               Sứ mệnh
             </motion.span>
@@ -210,7 +217,7 @@ export default function MissionPilaSection() {
               </motion.span>
             </div>
           </div>
-          <div className="relative flex justify-center items-center">
+          <div className="z-0 relative flex justify-center items-center">
             <motion.div
               viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
@@ -233,7 +240,10 @@ export default function MissionPilaSection() {
               className="absolute w-[930px] top-[-305px] left-[-23px] max-2xl:w-[830px] max-2xl:top-[-280px] max-2xl:left-[-40px] 
             max-xl:w-[760px] max-xl:top-[-250px] max-xl:left-[-50px] max-lg:w-[780px] max-lg:top-[-260px] max-lg:left-[-65px]"
             >
-              <MainAnimation animationData={animationData} loop={true} />
+              {/* <MainAnimation animationData={animationData} loop={true} /> */}
+              <Suspense fallback={<Skeleton className="h-10 w-[600px]" />}>
+                <LazyAnimationMission />
+              </Suspense>
             </div>
           </div>
         </div>

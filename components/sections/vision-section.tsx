@@ -38,7 +38,7 @@ export default function VisionSection() {
   if (isMobile) {
     return (
       <section id="vision" className="overflow-hidden bg-white mb-[77px]">
-        <div className="flex flex-col gap-4">
+        <div className="relative flex flex-col gap-4">
           <motion.span
             viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
@@ -163,7 +163,7 @@ export default function VisionSection() {
             transition={{
               duration: 1.1,
             }}
-            className="px-5 mt-[18px] text-center text-[#717680] text-lg leading-7"
+            className="z-20 px-5 mt-[18px] text-center text-[#717680] text-lg leading-7"
           >
             Ứng dụng công nghệ để kiến tạo một nền kinh tế số an toàn, minh bạch
             và bền vững, đồng hành cùng hành trình chuyển đổi số quốc gia trong

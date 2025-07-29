@@ -874,6 +874,12 @@ ul.custom-list {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.text-gradient::selection {
+  background: #91c5ff;
+  color: black;
+}
+
 .text-gradient-vision {
   background: linear-gradient(90deg, #181818 0%, #7e7e7e 30.97%);
   background-clip: text;

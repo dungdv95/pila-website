@@ -106,7 +106,7 @@ export default function PartnerSection() {
     <section id="partner" className="mb-16 relative">
       <div className="container mx-auto px-[100px] max-2xl:px-4 max-xl:px-2">
         <div className="relative flex flex-col gap-[100px]">
-          <div className="flex flex-col gap-4 items-center">
+          <div className="z-20 flex flex-col gap-4 items-center">
             <motion.span
               viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
@@ -137,7 +137,7 @@ export default function PartnerSection() {
               trên phạm vi toàn nền kinh tế.
             </motion.span>
           </div>
-          <div className="grid grid-cols-3 gap-[31px] max-xl:gap-4 max-lg:grid-cols-2 max-lg:gap-5">
+          <div className="z-20 grid grid-cols-3 gap-[31px] max-xl:gap-4 max-lg:grid-cols-2 max-lg:gap-5">
             {listPartner.map((item) => (
               <motion.div
                 viewport={{ once: true }}
@@ -173,7 +173,7 @@ export default function PartnerSection() {
             transition={{
               duration: 1.1,
             }}
-            className="w-full absolute bottom-[-5%] left-0 max-2xl:bottom-[-5%] max-xl:bottom-[1%] max-lg:bottom-[15%]"
+            className="z-0 w-full absolute bottom-[-5%] left-0 max-2xl:bottom-[-5%] max-xl:bottom-[1%] max-lg:bottom-[15%]"
           >
             <img src="/images/map-earth.webp" className="w-full object-cover" />
           </motion.div>

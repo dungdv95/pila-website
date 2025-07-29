@@ -394,7 +394,7 @@ export default function BuildingSection() {
           </motion.span>
         </div>
         <div className="relative flex items-center gap-[30px] max-xl:gap-3 max-lg:gap-2">
-          <div className="w-1/2 flex flex-col gap-6 max-xl:gap-3 max-lg:gap-2">
+          <div className="z-20 w-1/2 flex flex-col gap-6 max-xl:gap-3 max-lg:gap-2">
             <motion.span
               viewport={{ once: true }}
               initial={{ opacity: 0, y: 40 }}
@@ -485,7 +485,7 @@ export default function BuildingSection() {
             transition={{
               duration: 1.1,
             }}
-            className=" flex justify-center items-center w-[700px] max-2xl:w-[550px]
+            className="z-10 flex justify-center items-center w-[700px] max-2xl:w-[550px]
           max-xl:w-[600px] max-lg:w-[430px]"
           >
             <img
@@ -501,7 +501,7 @@ export default function BuildingSection() {
             transition={{
               duration: 1.1,
             }}
-            className="absolute bottom-[-30%] left-[-38%] w-[1300px] max-2xl:left-[-40%] max-2xl:bottom-[-55%] max-xl:w-[1100px] max-xl:left-[-45%] max-xl:bottom-[-37%] 
+            className="z-0 absolute bottom-[-30%] left-[-38%] w-[1300px] max-2xl:left-[-40%] max-2xl:bottom-[-55%] max-xl:w-[1100px] max-xl:left-[-45%] max-xl:bottom-[-37%] 
           max-lg:w-[950px] max-lg:left-[-57%] max-lg:bottom-[-48%]"
           >
             <img
@@ -510,7 +510,7 @@ export default function BuildingSection() {
             />
           </motion.div>
         </div>
-        <div className="flex items-center gap-12 max-xl:gap-8 max-lg:gap-6">
+        <div className="relative flex items-center gap-12 max-xl:gap-8 max-lg:gap-6">
           <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
@@ -518,7 +518,7 @@ export default function BuildingSection() {
             transition={{
               duration: 1.1,
             }}
-            className="flex justify-center items-center w-[650px] max-2xl:w-[550px]
+            className="z-10 flex justify-center items-center w-[650px] max-2xl:w-[550px]
           max-xl:w-[500px] max-lg:w-[430px]"
           >
             <img
