@@ -72,6 +72,8 @@ export default function HeaderSection({
 
 function DesktopHeader() {
   const [activeSection, setActiveSection] = useState("");
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -84,7 +86,7 @@ function DesktopHeader() {
       },
       {
         threshold: 0.1,
-        rootMargin: "-50px 0px -50px 0px",
+        rootMargin: "-100px 0px -100px 0px",
       }
     );
 
@@ -96,8 +98,32 @@ function DesktopHeader() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const controlNavbar = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY < lastScrollY || currentScrollY < 10) {
+        // Scrolling up or at the top
+        setIsVisible(true);
+      } else {
+        // Scrolling down
+        setIsVisible(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", controlNavbar);
+    return () => window.removeEventListener("scroll", controlNavbar);
+  }, [lastScrollY]);
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full">
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 w-full transition-transform duration-300 ease-in-out",
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      )}
+    >
       <div className="container mx-auto pt-7 px-[100px] max-2xl:px-4 max-xl:px-2">
         <motion.div
           viewport={{ once: true }}
@@ -171,6 +197,8 @@ function DesktopHeader() {
 function MobileHeader({ isScrolledToTop }: { isScrolledToTop: boolean }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -195,8 +223,32 @@ function MobileHeader({ isScrolledToTop }: { isScrolledToTop: boolean }) {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const controlNavbar = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY < lastScrollY || currentScrollY < 10) {
+        // Scrolling up or at the top
+        setIsVisible(true);
+      } else {
+        // Scrolling down
+        setIsVisible(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", controlNavbar);
+    return () => window.removeEventListener("scroll", controlNavbar);
+  }, [lastScrollY]);
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full">
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 w-full transition-transform duration-300 ease-in-out",
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      )}
+    >
       <motion.div
         viewport={{ once: true }}
         initial={{ opacity: 0, y: -40 }}
