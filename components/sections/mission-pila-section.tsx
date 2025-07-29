@@ -39,7 +39,9 @@ export default function MissionPilaSection() {
           bg-mobile-mission
         "
           >
-            <Suspense fallback={<Skeleton className="h-10 w-[600px]" />}>
+            <Suspense
+              fallback={<Skeleton className="h-10 w-10 bg-transparent" />}
+            >
               <LazyAnimationMission />
             </Suspense>
             {/* <MainAnimation animationData={animationData} loop={true} /> */}
@@ -241,7 +243,9 @@ export default function MissionPilaSection() {
             max-xl:w-[760px] max-xl:top-[-250px] max-xl:left-[-50px] max-lg:w-[780px] max-lg:top-[-260px] max-lg:left-[-65px]"
             >
               {/* <MainAnimation animationData={animationData} loop={true} /> */}
-              <Suspense fallback={<Skeleton className="h-10 w-[600px]" />}>
+              <Suspense
+                fallback={<Skeleton className="h-10 w-10 bg-transparent" />}
+              >
                 <LazyAnimationMission />
               </Suspense>
             </div>

@@ -25,7 +25,9 @@ export default function BannerSection() {
                 }}
                 className="w-[620px] absolute top-0 left-[6%] max-[37.5rem]:left-[-7%] max-[31.25rem]:left-[-10%] max-[25rem]:left-[-15%]"
               >
-                <Suspense fallback={<Skeleton className="h-10 w-[600px]" />}>
+                <Suspense
+                  fallback={<Skeleton className="h-10 w-10 bg-transparent" />}
+                >
                   <LazyAnimationBanner />
                 </Suspense>
                 {/* <MainAnimation animationData={animationData} loop={true} /> */}
@@ -139,7 +141,9 @@ export default function BannerSection() {
             right-[-250px] max-2xl:right-[-170px] max-xl:right-[-260px] max-lg:top-[10px]"
             >
               {/* <MainAnimation animationData={animationData} loop={true} /> */}
-              <Suspense fallback={<Skeleton className="h-10 w-[600px]" />}>
+              <Suspense
+                fallback={<Skeleton className="h-10 w-10 bg-transparent" />}
+              >
                 <LazyAnimationBanner />
               </Suspense>
             </motion.div>
