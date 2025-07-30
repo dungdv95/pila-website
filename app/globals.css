@@ -886,3 +886,11 @@ ul.custom-list {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.bg-product {
+  background: linear-gradient(
+    180deg,
+    rgba(187, 235, 255, 0.6) 0%,
+    rgba(155, 226, 255, 0.6) 100%
+  );
+}

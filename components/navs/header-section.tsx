@@ -99,23 +99,37 @@ function DesktopHeader() {
   }, []);
 
   useEffect(() => {
-    const controlNavbar = () => {
+    let scrollTimer: NodeJS.Timeout;
+
+    const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY < lastScrollY || currentScrollY < 10) {
-        // Scrolling up or at the top
-        setIsVisible(true);
-      } else {
-        // Scrolling down
+      // Ẩn header ngay khi bắt đầu scroll (trừ khi ở đầu trang)
+      if (currentScrollY > 10) {
         setIsVisible(false);
+      } else {
+        // Luôn hiện header khi ở đầu trang
+        setIsVisible(true);
       }
+
+      // Clear timer cũ
+      clearTimeout(scrollTimer);
+
+      // Set timer mới - hiện header sau khi dừng scroll
+      scrollTimer = setTimeout(() => {
+        setIsVisible(true);
+      }, 300); // Hiện header sau 150ms không scroll
 
       setLastScrollY(currentScrollY);
     };
 
-    window.addEventListener("scroll", controlNavbar);
-    return () => window.removeEventListener("scroll", controlNavbar);
-  }, [lastScrollY]);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(scrollTimer);
+    };
+  }, []);
 
   return (
     <header
@@ -224,23 +238,37 @@ function MobileHeader({ isScrolledToTop }: { isScrolledToTop: boolean }) {
   }, []);
 
   useEffect(() => {
-    const controlNavbar = () => {
+    let scrollTimer: NodeJS.Timeout;
+
+    const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY < lastScrollY || currentScrollY < 10) {
-        // Scrolling up or at the top
-        setIsVisible(true);
-      } else {
-        // Scrolling down
+      // Ẩn header ngay khi bắt đầu scroll (trừ khi ở đầu trang)
+      if (currentScrollY > 10) {
         setIsVisible(false);
+      } else {
+        // Luôn hiện header khi ở đầu trang
+        setIsVisible(true);
       }
+
+      // Clear timer cũ
+      clearTimeout(scrollTimer);
+
+      // Set timer mới - hiện header sau khi dừng scroll
+      scrollTimer = setTimeout(() => {
+        setIsVisible(true);
+      }, 300); // Hiện header sau 150ms không scroll
 
       setLastScrollY(currentScrollY);
     };
 
-    window.addEventListener("scroll", controlNavbar);
-    return () => window.removeEventListener("scroll", controlNavbar);
-  }, [lastScrollY]);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(scrollTimer);
+    };
+  }, []);
 
   return (
     <header

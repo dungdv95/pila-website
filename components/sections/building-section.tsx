@@ -494,6 +494,7 @@ export default function BuildingSection() {
               className="w-full h-full object-contain"
             />
           </motion.div>
+
           <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, y: 40 }}
@@ -501,13 +502,9 @@ export default function BuildingSection() {
             transition={{
               duration: 1.1,
             }}
-            className="z-0 absolute bottom-[-30%] left-[-38%] w-[1300px] max-2xl:left-[-40%] max-2xl:bottom-[-55%] max-xl:w-[1100px] max-xl:left-[-45%] max-xl:bottom-[-37%] 
-          max-lg:w-[950px] max-lg:left-[-57%] max-lg:bottom-[-48%]"
+            className="z-0 absolute top-[39%] left-[-20%] max-2xl:top-[37%] max-xl:top-[33%] max-lg:top-[28%]"
           >
-            <img
-              src="/images/building-bg.webp"
-              className="w-full object-cover"
-            />
+            <div className="bg-product w-[1000px] h-[500px] max-2xl:w-[950px] max-2xl:h-[450px] max-xl:w-[800px] max-xl:h-[460px] max-lg:w-[600px] max-lg:h-[400px] rounded-full opacity-30 blur-[50px]"></div>
           </motion.div>
         </div>
         <div className="relative flex items-center gap-12 max-xl:gap-8 max-lg:gap-6">
